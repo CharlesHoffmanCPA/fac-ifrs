@@ -1,5 +1,5 @@
 # fac-ifrs
-Fundamental accounting concept relatinos validation for International Financial Reporting Standards (IFRS).
+Fundamental accounting concept relations validation for International Financial Reporting Standards (IFRS).
 
 For more information, see this web page: http://xbrl.squarespace.com/journal/2018/7/14/updated-list-of-ifrs-filings.html
 
