@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created by Charles Hoffman, CPA 2018-03-19 -->
+<!-- Removed unused arcroles; only including arcroles specifically applicable to FAC validation now. -->
+<schema 
+	xmlns="http://www.w3.org/2001/XMLSchema" 
+	xmlns:xbrli="http://www.xbrl.org/2003/instance" 
+	xmlns:link="http://www.xbrl.org/2003/linkbase" 
+	xmlns:xlink="http://www.w3.org/1999/xlink" 
+	xmlns:fro-arcroles="http://www.xbrlsite.com/2014/Protototype/fro-arcroles" 
+	targetNamespace="http://www.xbrlsite.com/2014/Protototype/fro-arcroles" 
+	elementFormDefault="qualified" 
+	attributeFormDefault="unqualified">
+  <annotation>
+    <documentation>Provides arcroles for articulating relations including six different/identifiable/distinguishable part-whole type relations as described here:  http://csjarchive.cogsci.rpi.edu/1987v11/i04/p0417p0444/MAIN.PDF</documentation>
+    <appinfo>
+      <link:arcroleType arcroleURI="http://www.xbrlsite.com/2014/Protototype/fro/arcrole/class-subClass" id="class-subClass" cyclesAllowed="undirected">
+        <link:definition>The class extension of a class description is a subset of the class extension of another class description. Same as OWL definition of subClassOf.  For more information see http://www.w3.org/TR/owl-ref/#subClassOf-def</link:definition>
+        <link:usedOn>link:definitionArc</link:usedOn>
+      </link:arcroleType>
+      <link:arcroleType arcroleURI="http://www.xbrlsite.com/2014/Protototype/fro/arcrole/class-equivalentClass" id="class-equivalentClass" cyclesAllowed="undirected">
+        <link:definition>Both class extensions contain exactly the same set of individuals. Same as OWL definition of equivalentClass. For more information see http://www.w3.org/TR/owl-ref/#equivalentClass-def</link:definition>
+        <link:usedOn>link:definitionArc</link:usedOn>
+      </link:arcroleType>
+
+    </appinfo>
+  </annotation>
+  <import namespace="http://www.xbrl.org/2003/instance" schemaLocation="http://www.xbrl.org/2003/xbrl-instance-2003-12-31.xsd" />
+</schema>

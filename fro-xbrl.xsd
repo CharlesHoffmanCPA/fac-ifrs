@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!-- Created by Charles Hoffman, CPA 2014-09-09 -->
+<schema 
+ xmlns='http://www.w3.org/2001/XMLSchema' 
+ xmlns:xbrli='http://www.xbrl.org/2003/instance' 
+ xmlns:link='http://www.xbrl.org/2003/linkbase' 
+ xmlns:xlink='http://www.w3.org/1999/xlink' 
+ xmlns:fro-xbrl='http://www.xbrlsite.com/2018/Protototype/fro-xbrl' 
+ targetNamespace='http://www.xbrlsite.com/2018/Protototype/fro-xbrl' 
+ elementFormDefault='qualified' 
+ attributeFormDefault='unqualified'>
+  <annotation>
+    <documentation>Financial Report Ontology (FRO) XBRL related metadata</documentation>
+    <appinfo>
+
+    </appinfo>
+  </annotation>
+  <import namespace='http://www.xbrl.org/2003/instance' schemaLocation='http://www.xbrl.org/2003/xbrl-instance-2003-12-31.xsd' />
+  
+  	<element id="fro-xbrl_validationRuleItem" name="validationRuleItem" type="xbrli:monetaryItemType" xbrli:periodType="duration" substitutionGroup="xbrli:item" abstract="true"/>
+
+
+</schema>

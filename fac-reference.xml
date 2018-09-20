@@ -1,0 +1,654 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+Taxonomy Reference Links linkbase based on XBRL standard Version 2.1.
+Created by UBmatrix Taxonomy Designer 3.0.3.2436 (2009-06-02 13:18).  
+Contact www.ubmatrix.com
+Copyright (c) 2002-2018 UBmatrix inc., All Rights Reserved
+Produced on 2018-08-02 09:07:33
+-->
+<linkbase
+  xmlns="http://www.xbrl.org/2003/linkbase"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns:xlink="http://www.w3.org/1999/xlink"
+  xmlns:fac="http://www.xbrlsite.com/2018/Protototype/fac/ifrs"
+  xmlns:ref="http://www.xbrl.org/2004/ref"
+  xsi:schemaLocation="
+    http://www.xbrl.org/2003/linkbase 
+      http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd
+    http://www.xbrlsite.com/2018/Protototype/fac/ifrs  fac.xsd
+    http://www.xbrl.org/2004/ref 
+      http://www.xbrl.org/2004/ref-2004-08-10.xsd
+    ">
+  <referenceLink xlink:type="extended"
+    xlink:role="http://www.xbrl.org/2003/role/link">
+    <loc xlink:type="locator"
+      xlink:label="fac_Assets"
+      xlink:href="fac.xsd#fac_Assets" />
+    <referenceArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference"
+      xlink:from="fac_Assets" xlink:to="fac_Assets_ref" />
+    <reference xlink:type="resource"
+      xlink:role="http://www.xbrl.org/2003/role/reference"
+      xlink:label="fac_Assets_ref">
+      <ref:URI>http://fundamentalaccountingconcepts.wikispaces.com/Assets</ref:URI>
+    </reference>
+    <loc xlink:type="locator"
+      xlink:label="fac_CommitmentsAndContingencies"
+      xlink:href="fac.xsd#fac_CommitmentsAndContingencies" />
+    <referenceArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference"
+      xlink:from="fac_CommitmentsAndContingencies"
+      xlink:to="fac_CommitmentsAndContingencies_ref" />
+    <reference xlink:type="resource"
+      xlink:role="http://www.xbrl.org/2003/role/reference"
+      xlink:label="fac_CommitmentsAndContingencies_ref">
+      <ref:URI>http://fundamentalaccountingconcepts.wikispaces.com/Commitments+and+Contingencies</ref:URI>
+    </reference>
+    <loc xlink:type="locator"
+      xlink:label="fac_ComprehensiveIncomeLossAttributableToNoncontrollingInterest"
+      xlink:href="fac.xsd#fac_ComprehensiveIncomeLossAttributableToNoncontrollingInterest" />
+    <referenceArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference"
+      xlink:from="fac_ComprehensiveIncomeLossAttributableToNoncontrollingInterest"
+      xlink:to="fac_ComprehensiveIncomeLossAttributableToNoncontrollingInterest_ref" />
+    <reference xlink:type="resource"
+      xlink:role="http://www.xbrl.org/2003/role/reference"
+      xlink:label="fac_ComprehensiveIncomeLossAttributableToNoncontrollingInterest_ref">
+      <ref:URI>http://fundamentalaccountingconcepts.wikispaces.com/Comprehensive+Income+Attributable+to+Noncontrolling+Interest</ref:URI>
+    </reference>
+    <loc xlink:type="locator"
+      xlink:label="fac_ComprehensiveIncomeLossAttributableToParent"
+      xlink:href="fac.xsd#fac_ComprehensiveIncomeLossAttributableToParent" />
+    <referenceArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference"
+      xlink:from="fac_ComprehensiveIncomeLossAttributableToParent"
+      xlink:to="fac_ComprehensiveIncomeLossAttributableToParent_ref" />
+    <reference xlink:type="resource"
+      xlink:role="http://www.xbrl.org/2003/role/reference"
+      xlink:label="fac_ComprehensiveIncomeLossAttributableToParent_ref">
+      <ref:URI>http://fundamentalaccountingconcepts.wikispaces.com/Comprehensive+Income+Attributable+to+Parent</ref:URI>
+    </reference>
+    <loc xlink:type="locator"
+      xlink:label="fac_ComprehensiveIncomeLoss"
+      xlink:href="fac.xsd#fac_ComprehensiveIncomeLoss" />
+    <referenceArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference"
+      xlink:from="fac_ComprehensiveIncomeLoss"
+      xlink:to="fac_ComprehensiveIncomeLoss_ref" />
+    <reference xlink:type="resource"
+      xlink:role="http://www.xbrl.org/2003/role/reference"
+      xlink:label="fac_ComprehensiveIncomeLoss_ref">
+      <ref:URI>http://fundamentalaccountingconcepts.wikispaces.com/Comprehensive+Income</ref:URI>
+    </reference>
+    <loc xlink:type="locator"
+      xlink:label="fac_CostOfRevenue"
+      xlink:href="fac.xsd#fac_CostOfRevenue" />
+    <referenceArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference"
+      xlink:from="fac_CostOfRevenue" xlink:to="fac_CostOfRevenue_ref" />
+    <reference xlink:type="resource"
+      xlink:role="http://www.xbrl.org/2003/role/reference"
+      xlink:label="fac_CostOfRevenue_ref">
+      <ref:URI>http://fundamentalaccountingconcepts.wikispaces.com/Cost+of+Revenue</ref:URI>
+    </reference>
+    <loc xlink:type="locator"
+      xlink:label="fac_CostsAndExpenses"
+      xlink:href="fac.xsd#fac_CostsAndExpenses" />
+    <referenceArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference"
+      xlink:from="fac_CostsAndExpenses" xlink:to="fac_CostsAndExpenses_ref" />
+    <reference xlink:type="resource"
+      xlink:role="http://www.xbrl.org/2003/role/reference"
+      xlink:label="fac_CostsAndExpenses_ref">
+      <ref:Sentence>http://fundamentalaccountingconcepts.wikispaces.com/Costs+And+Expenses</ref:Sentence>
+    </reference>
+    <loc xlink:type="locator"
+      xlink:label="fac_CurrentAssets"
+      xlink:href="fac.xsd#fac_CurrentAssets" />
+    <referenceArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference"
+      xlink:from="fac_CurrentAssets" xlink:to="fac_CurrentAssets_ref" />
+    <reference xlink:type="resource"
+      xlink:role="http://www.xbrl.org/2003/role/reference"
+      xlink:label="fac_CurrentAssets_ref">
+      <ref:URI>http://fundamentalaccountingconcepts.wikispaces.com/Current+Assets</ref:URI>
+    </reference>
+    <loc xlink:type="locator"
+      xlink:label="fac_CurrentLiabilities"
+      xlink:href="fac.xsd#fac_CurrentLiabilities" />
+    <referenceArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference"
+      xlink:from="fac_CurrentLiabilities" xlink:to="fac_CurrentLiabilities_ref" />
+    <reference xlink:type="resource"
+      xlink:role="http://www.xbrl.org/2003/role/reference"
+      xlink:label="fac_CurrentLiabilities_ref">
+      <ref:URI>http://fundamentalaccountingconcepts.wikispaces.com/Current+Liabilities</ref:URI>
+    </reference>
+    <loc xlink:type="locator"
+      xlink:label="fac_EquityAttributableToNoncontrollingInterest"
+      xlink:href="fac.xsd#fac_EquityAttributableToNoncontrollingInterest" />
+    <referenceArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference"
+      xlink:from="fac_EquityAttributableToNoncontrollingInterest"
+      xlink:to="fac_EquityAttributableToNoncontrollingInterest_ref" />
+    <reference xlink:type="resource"
+      xlink:role="http://www.xbrl.org/2003/role/reference"
+      xlink:label="fac_EquityAttributableToNoncontrollingInterest_ref">
+      <ref:URI>http://fundamentalaccountingconcepts.wikispaces.com/Equity+Attributable+to+Noncontrolling+Interest</ref:URI>
+    </reference>
+    <loc xlink:type="locator"
+      xlink:label="fac_EquityAttributableToParent"
+      xlink:href="fac.xsd#fac_EquityAttributableToParent" />
+    <referenceArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference"
+      xlink:from="fac_EquityAttributableToParent"
+      xlink:to="fac_EquityAttributableToParent_ref" />
+    <reference xlink:type="resource"
+      xlink:role="http://www.xbrl.org/2003/role/reference"
+      xlink:label="fac_EquityAttributableToParent_ref">
+      <ref:URI>http://fundamentalaccountingconcepts.wikispaces.com/Equity+Attributable+to+Parent</ref:URI>
+    </reference>
+    <loc xlink:type="locator"
+      xlink:label="fac_Equity"
+      xlink:href="fac.xsd#fac_Equity" />
+    <referenceArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference"
+      xlink:from="fac_Equity" xlink:to="fac_Equity_ref" />
+    <reference xlink:type="resource"
+      xlink:role="http://www.xbrl.org/2003/role/reference"
+      xlink:label="fac_Equity_ref">
+      <ref:URI>http://fundamentalaccountingconcepts.wikispaces.com/Equity</ref:URI>
+    </reference>
+    <loc xlink:type="locator"
+      xlink:label="fac_ExchangeGainsLosses"
+      xlink:href="fac.xsd#fac_ExchangeGainsLosses" />
+    <referenceArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference"
+      xlink:from="fac_ExchangeGainsLosses" xlink:to="fac_ExchangeGainsLosses_ref" />
+    <reference xlink:type="resource"
+      xlink:role="http://www.xbrl.org/2003/role/reference"
+      xlink:label="fac_ExchangeGainsLosses_ref">
+      <ref:URI>http://fundamentalaccountingconcepts.wikispaces.com/Exchange+Gains+%28Losses%29</ref:URI>
+    </reference>
+    <loc xlink:type="locator"
+      xlink:label="fac_ExtraordinaryItemsOfIncomeExpenseNetOfTax"
+      xlink:href="fac.xsd#fac_ExtraordinaryItemsOfIncomeExpenseNetOfTax" />
+    <referenceArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference"
+      xlink:from="fac_ExtraordinaryItemsOfIncomeExpenseNetOfTax"
+      xlink:to="fac_ExtraordinaryItemsOfIncomeExpenseNetOfTax_ref" />
+    <reference xlink:type="resource"
+      xlink:role="http://www.xbrl.org/2003/role/reference"
+      xlink:label="fac_ExtraordinaryItemsOfIncomeExpenseNetOfTax_ref">
+      <ref:URI>http://fundamentalaccountingconcepts.wikispaces.com/Extraordinary+Items%2C+Gain+%28Loss%29</ref:URI>
+    </reference>
+    <loc xlink:type="locator"
+      xlink:label="fac_GrossProfit"
+      xlink:href="fac.xsd#fac_GrossProfit" />
+    <referenceArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference"
+      xlink:from="fac_GrossProfit" xlink:to="fac_GrossProfit_ref" />
+    <reference xlink:type="resource"
+      xlink:role="http://www.xbrl.org/2003/role/reference"
+      xlink:label="fac_GrossProfit_ref">
+      <ref:URI>http://fundamentalaccountingconcepts.wikispaces.com/Gross+Profit</ref:URI>
+    </reference>
+    <loc xlink:type="locator"
+      xlink:label="fac_IncomeLossBeforeEquityMethodInvestments"
+      xlink:href="fac.xsd#fac_IncomeLossBeforeEquityMethodInvestments" />
+    <referenceArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference"
+      xlink:from="fac_IncomeLossBeforeEquityMethodInvestments"
+      xlink:to="fac_IncomeLossBeforeEquityMethodInvestments_ref" />
+    <reference xlink:type="resource"
+      xlink:role="http://www.xbrl.org/2003/role/reference"
+      xlink:label="fac_IncomeLossBeforeEquityMethodInvestments_ref">
+      <ref:URI>http://fundamentalaccountingconcepts.wikispaces.com/Income+%28Loss%29+from+Continuing+Operations+Before+Equity+Method+Investments</ref:URI>
+    </reference>
+    <loc xlink:type="locator"
+      xlink:label="fac_IncomeLossFromContinuingOperationsAfterTax"
+      xlink:href="fac.xsd#fac_IncomeLossFromContinuingOperationsAfterTax" />
+    <referenceArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference"
+      xlink:from="fac_IncomeLossFromContinuingOperationsAfterTax"
+      xlink:to="fac_IncomeLossFromContinuingOperationsAfterTax_ref" />
+    <reference xlink:type="resource"
+      xlink:role="http://www.xbrl.org/2003/role/reference"
+      xlink:label="fac_IncomeLossFromContinuingOperationsAfterTax_ref">
+      <ref:URI>http://fundamentalaccountingconcepts.wikispaces.com/Income+%28Loss%29+from+Continuing+Operations+After+Tax</ref:URI>
+    </reference>
+    <loc xlink:type="locator"
+      xlink:label="fac_IncomeLossFromContinuingOperationsBeforeTax"
+      xlink:href="fac.xsd#fac_IncomeLossFromContinuingOperationsBeforeTax" />
+    <referenceArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference"
+      xlink:from="fac_IncomeLossFromContinuingOperationsBeforeTax"
+      xlink:to="fac_IncomeLossFromContinuingOperationsBeforeTax_ref" />
+    <reference xlink:type="resource"
+      xlink:role="http://www.xbrl.org/2003/role/reference"
+      xlink:label="fac_IncomeLossFromContinuingOperationsBeforeTax_ref">
+      <ref:URI>http://fundamentalaccountingconcepts.wikispaces.com/Income+%28Loss%29+from+Continuing+Operations+Before+Tax</ref:URI>
+    </reference>
+    <loc xlink:type="locator"
+      xlink:label="fac_IncomeLossFromDiscontinuedOperationsNetOfTax"
+      xlink:href="fac.xsd#fac_IncomeLossFromDiscontinuedOperationsNetOfTax" />
+    <referenceArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference"
+      xlink:from="fac_IncomeLossFromDiscontinuedOperationsNetOfTax"
+      xlink:to="fac_IncomeLossFromDiscontinuedOperationsNetOfTax_ref" />
+    <reference xlink:type="resource"
+      xlink:role="http://www.xbrl.org/2003/role/reference"
+      xlink:label="fac_IncomeLossFromDiscontinuedOperationsNetOfTax_ref">
+      <ref:URI>http://fundamentalaccountingconcepts.wikispaces.com/Income+%28Loss%29+from+Discontinued+Operations%2C+Net+of+Tax</ref:URI>
+    </reference>
+    <loc xlink:type="locator"
+      xlink:label="fac_IncomeLossFromEquityMethodInvestments"
+      xlink:href="fac.xsd#fac_IncomeLossFromEquityMethodInvestments" />
+    <referenceArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference"
+      xlink:from="fac_IncomeLossFromEquityMethodInvestments"
+      xlink:to="fac_IncomeLossFromEquityMethodInvestments_ref" />
+    <reference xlink:type="resource"
+      xlink:role="http://www.xbrl.org/2003/role/reference"
+      xlink:label="fac_IncomeLossFromEquityMethodInvestments_ref">
+      <ref:URI>http://fundamentalaccountingconcepts.wikispaces.com/Income+%28Loss%29+from+Equity+Method+Investments</ref:URI>
+    </reference>
+    <loc xlink:type="locator"
+      xlink:label="fac_IncomeTaxExpenseBenefit"
+      xlink:href="fac.xsd#fac_IncomeTaxExpenseBenefit" />
+    <referenceArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference"
+      xlink:from="fac_IncomeTaxExpenseBenefit"
+      xlink:to="fac_IncomeTaxExpenseBenefit_ref" />
+    <reference xlink:type="resource"
+      xlink:role="http://www.xbrl.org/2003/role/reference"
+      xlink:label="fac_IncomeTaxExpenseBenefit_ref">
+      <ref:URI>http://fundamentalaccountingconcepts.wikispaces.com/Income+Tax+Expense+%28Benefit%29</ref:URI>
+    </reference>
+    <loc xlink:type="locator"
+      xlink:label="fac_InterestAndDebtExpense"
+      xlink:href="fac.xsd#fac_InterestAndDebtExpense" />
+    <referenceArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference"
+      xlink:from="fac_InterestAndDebtExpense"
+      xlink:to="fac_InterestAndDebtExpense_ref" />
+    <reference xlink:type="resource"
+      xlink:role="http://www.xbrl.org/2003/role/reference"
+      xlink:label="fac_InterestAndDebtExpense_ref">
+      <ref:URI>http://fundamentalaccountingconcepts.wikispaces.com/Interest+and+Debt+Expense</ref:URI>
+    </reference>
+    <loc xlink:type="locator"
+      xlink:label="fac_LiabilitiesAndEquity"
+      xlink:href="fac.xsd#fac_LiabilitiesAndEquity" />
+    <referenceArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference"
+      xlink:from="fac_LiabilitiesAndEquity"
+      xlink:to="fac_LiabilitiesAndEquity_ref" />
+    <reference xlink:type="resource"
+      xlink:role="http://www.xbrl.org/2003/role/reference"
+      xlink:label="fac_LiabilitiesAndEquity_ref">
+      <ref:URI>http://fundamentalaccountingconcepts.wikispaces.com/Liabilities+and+Equity</ref:URI>
+    </reference>
+    <loc xlink:type="locator"
+      xlink:label="fac_Liabilities"
+      xlink:href="fac.xsd#fac_Liabilities" />
+    <referenceArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference"
+      xlink:from="fac_Liabilities" xlink:to="fac_Liabilities_ref" />
+    <reference xlink:type="resource"
+      xlink:role="http://www.xbrl.org/2003/role/reference"
+      xlink:label="fac_Liabilities_ref">
+      <ref:URI>http://fundamentalaccountingconcepts.wikispaces.com/Liabilities</ref:URI>
+    </reference>
+    <loc xlink:type="locator"
+      xlink:label="fac_NetCashFlowContinuing"
+      xlink:href="fac.xsd#fac_NetCashFlowContinuing" />
+    <referenceArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference"
+      xlink:from="fac_NetCashFlowContinuing"
+      xlink:to="fac_NetCashFlowContinuing_ref" />
+    <reference xlink:type="resource"
+      xlink:role="http://www.xbrl.org/2003/role/reference"
+      xlink:label="fac_NetCashFlowContinuing_ref">
+      <ref:URI>http://fundamentalaccountingconcepts.wikispaces.com/Net+Cash+Flows%2C+Continuing</ref:URI>
+    </reference>
+    <loc xlink:type="locator"
+      xlink:label="fac_NetCashFlowDiscontinued"
+      xlink:href="fac.xsd#fac_NetCashFlowDiscontinued" />
+    <referenceArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference"
+      xlink:from="fac_NetCashFlowDiscontinued"
+      xlink:to="fac_NetCashFlowDiscontinued_ref" />
+    <reference xlink:type="resource"
+      xlink:role="http://www.xbrl.org/2003/role/reference"
+      xlink:label="fac_NetCashFlowDiscontinued_ref">
+      <ref:URI>http://fundamentalaccountingconcepts.wikispaces.com/Net+Cash+Flows%2C+Discontinued</ref:URI>
+    </reference>
+    <loc xlink:type="locator"
+      xlink:label="fac_NetCashFlowFromFinancingActivitiesContinuing"
+      xlink:href="fac.xsd#fac_NetCashFlowFromFinancingActivitiesContinuing" />
+    <referenceArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference"
+      xlink:from="fac_NetCashFlowFromFinancingActivitiesContinuing"
+      xlink:to="fac_NetCashFlowFromFinancingActivitiesContinuing_ref" />
+    <reference xlink:type="resource"
+      xlink:role="http://www.xbrl.org/2003/role/reference"
+      xlink:label="fac_NetCashFlowFromFinancingActivitiesContinuing_ref">
+      <ref:URI>http://fundamentalaccountingconcepts.wikispaces.com/Net+Cash+Flows%2C+Financing%2C+Continuing</ref:URI>
+    </reference>
+    <loc xlink:type="locator"
+      xlink:label="fac_NetCashFlowFromFinancingActivitiesDiscontinued"
+      xlink:href="fac.xsd#fac_NetCashFlowFromFinancingActivitiesDiscontinued" />
+    <referenceArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference"
+      xlink:from="fac_NetCashFlowFromFinancingActivitiesDiscontinued"
+      xlink:to="fac_NetCashFlowFromFinancingActivitiesDiscontinued_ref" />
+    <reference xlink:type="resource"
+      xlink:role="http://www.xbrl.org/2003/role/reference"
+      xlink:label="fac_NetCashFlowFromFinancingActivitiesDiscontinued_ref">
+      <ref:URI>http://fundamentalaccountingconcepts.wikispaces.com/Net+Cash+Flows%2C+Financing%2C+Discontinued</ref:URI>
+    </reference>
+    <loc xlink:type="locator"
+      xlink:label="fac_NetCashFlowFromFinancingActivities"
+      xlink:href="fac.xsd#fac_NetCashFlowFromFinancingActivities" />
+    <referenceArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference"
+      xlink:from="fac_NetCashFlowFromFinancingActivities"
+      xlink:to="fac_NetCashFlowFromFinancingActivities_ref" />
+    <reference xlink:type="resource"
+      xlink:role="http://www.xbrl.org/2003/role/reference"
+      xlink:label="fac_NetCashFlowFromFinancingActivities_ref">
+      <ref:URI>http://fundamentalaccountingconcepts.wikispaces.com/Net+Cash+Flows%2C+Financing</ref:URI>
+    </reference>
+    <loc xlink:type="locator"
+      xlink:label="fac_NetCashFlowFromInvestingActivitiesContinuing"
+      xlink:href="fac.xsd#fac_NetCashFlowFromInvestingActivitiesContinuing" />
+    <referenceArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference"
+      xlink:from="fac_NetCashFlowFromInvestingActivitiesContinuing"
+      xlink:to="fac_NetCashFlowFromInvestingActivitiesContinuing_ref" />
+    <reference xlink:type="resource"
+      xlink:role="http://www.xbrl.org/2003/role/reference"
+      xlink:label="fac_NetCashFlowFromInvestingActivitiesContinuing_ref">
+      <ref:URI>http://fundamentalaccountingconcepts.wikispaces.com/Net+Cash+Flows%2C+Investing%2C+Continuing</ref:URI>
+    </reference>
+    <loc xlink:type="locator"
+      xlink:label="fac_NetCashFlowFromInvestingActivitiesDiscontinued"
+      xlink:href="fac.xsd#fac_NetCashFlowFromInvestingActivitiesDiscontinued" />
+    <referenceArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference"
+      xlink:from="fac_NetCashFlowFromInvestingActivitiesDiscontinued"
+      xlink:to="fac_NetCashFlowFromInvestingActivitiesDiscontinued_ref" />
+    <reference xlink:type="resource"
+      xlink:role="http://www.xbrl.org/2003/role/reference"
+      xlink:label="fac_NetCashFlowFromInvestingActivitiesDiscontinued_ref">
+      <ref:URI>http://fundamentalaccountingconcepts.wikispaces.com/Net+Cash+Flows%2C+Investing%2C+Discontinued</ref:URI>
+    </reference>
+    <loc xlink:type="locator"
+      xlink:label="fac_NetCashFlowFromInvestingActivities"
+      xlink:href="fac.xsd#fac_NetCashFlowFromInvestingActivities" />
+    <referenceArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference"
+      xlink:from="fac_NetCashFlowFromInvestingActivities"
+      xlink:to="fac_NetCashFlowFromInvestingActivities_ref" />
+    <reference xlink:type="resource"
+      xlink:role="http://www.xbrl.org/2003/role/reference"
+      xlink:label="fac_NetCashFlowFromInvestingActivities_ref">
+      <ref:URI>http://fundamentalaccountingconcepts.wikispaces.com/Net+Cash+Flows%2C+Investing</ref:URI>
+    </reference>
+    <loc xlink:type="locator"
+      xlink:label="fac_NetCashFlowFromOperatingActivitiesContinuing"
+      xlink:href="fac.xsd#fac_NetCashFlowFromOperatingActivitiesContinuing" />
+    <referenceArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference"
+      xlink:from="fac_NetCashFlowFromOperatingActivitiesContinuing"
+      xlink:to="fac_NetCashFlowFromOperatingActivitiesContinuing_ref" />
+    <reference xlink:type="resource"
+      xlink:role="http://www.xbrl.org/2003/role/reference"
+      xlink:label="fac_NetCashFlowFromOperatingActivitiesContinuing_ref">
+      <ref:URI>http://fundamentalaccountingconcepts.wikispaces.com/Net+Cash+Flows%2C+Operating%2C+Continuing</ref:URI>
+    </reference>
+    <loc xlink:type="locator"
+      xlink:label="fac_NetCashFlowFromOperatingActivitiesDiscontinued"
+      xlink:href="fac.xsd#fac_NetCashFlowFromOperatingActivitiesDiscontinued" />
+    <referenceArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference"
+      xlink:from="fac_NetCashFlowFromOperatingActivitiesDiscontinued"
+      xlink:to="fac_NetCashFlowFromOperatingActivitiesDiscontinued_ref" />
+    <reference xlink:type="resource"
+      xlink:role="http://www.xbrl.org/2003/role/reference"
+      xlink:label="fac_NetCashFlowFromOperatingActivitiesDiscontinued_ref">
+      <ref:URI>http://fundamentalaccountingconcepts.wikispaces.com/Net+Cash+Flows%2C+Operating%2C+Discontinued</ref:URI>
+    </reference>
+    <loc xlink:type="locator"
+      xlink:label="fac_NetCashFlowFromOperatingActivities"
+      xlink:href="fac.xsd#fac_NetCashFlowFromOperatingActivities" />
+    <referenceArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference"
+      xlink:from="fac_NetCashFlowFromOperatingActivities"
+      xlink:to="fac_NetCashFlowFromOperatingActivities_ref" />
+    <reference xlink:type="resource"
+      xlink:role="http://www.xbrl.org/2003/role/reference"
+      xlink:label="fac_NetCashFlowFromOperatingActivities_ref">
+      <ref:URI>http://fundamentalaccountingconcepts.wikispaces.com/Net+Cash+Flows%2C+Operating</ref:URI>
+    </reference>
+    <loc xlink:type="locator"
+      xlink:label="fac_NetCashFlow"
+      xlink:href="fac.xsd#fac_NetCashFlow" />
+    <referenceArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference"
+      xlink:from="fac_NetCashFlow" xlink:to="fac_NetCashFlow_ref" />
+    <reference xlink:type="resource"
+      xlink:role="http://www.xbrl.org/2003/role/reference"
+      xlink:label="fac_NetCashFlow_ref">
+      <ref:URI>http://fundamentalaccountingconcepts.wikispaces.com/Net+Cash+Flow</ref:URI>
+    </reference>
+    <loc xlink:type="locator"
+      xlink:label="fac_NetIncomeLossAttributableToNoncontrollingInterest"
+      xlink:href="fac.xsd#fac_NetIncomeLossAttributableToNoncontrollingInterest" />
+    <referenceArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference"
+      xlink:from="fac_NetIncomeLossAttributableToNoncontrollingInterest"
+      xlink:to="fac_NetIncomeLossAttributableToNoncontrollingInterest_ref" />
+    <reference xlink:type="resource"
+      xlink:role="http://www.xbrl.org/2003/role/reference"
+      xlink:label="fac_NetIncomeLossAttributableToNoncontrollingInterest_ref">
+      <ref:URI>http://fundamentalaccountingconcepts.wikispaces.com/Net+Income+%28Loss%29+Attributable+to+Noncontrolling+Interest</ref:URI>
+    </reference>
+    <loc xlink:type="locator"
+      xlink:label="fac_NetIncomeLossAttributableToParent"
+      xlink:href="fac.xsd#fac_NetIncomeLossAttributableToParent" />
+    <referenceArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference"
+      xlink:from="fac_NetIncomeLossAttributableToParent"
+      xlink:to="fac_NetIncomeLossAttributableToParent_ref" />
+    <reference xlink:type="resource"
+      xlink:role="http://www.xbrl.org/2003/role/reference"
+      xlink:label="fac_NetIncomeLossAttributableToParent_ref">
+      <ref:URI>http://fundamentalaccountingconcepts.wikispaces.com/Net+Income+%28Loss%29+Attributable+to+Parent</ref:URI>
+    </reference>
+    <loc xlink:type="locator"
+      xlink:label="fac_NetIncomeLossAvailableToCommonStockholdersBasic"
+      xlink:href="fac.xsd#fac_NetIncomeLossAvailableToCommonStockholdersBasic" />
+    <referenceArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference"
+      xlink:from="fac_NetIncomeLossAvailableToCommonStockholdersBasic"
+      xlink:to="fac_NetIncomeLossAvailableToCommonStockholdersBasic_ref" />
+    <reference xlink:type="resource"
+      xlink:role="http://www.xbrl.org/2003/role/reference"
+      xlink:label="fac_NetIncomeLossAvailableToCommonStockholdersBasic_ref">
+      <ref:URI>http://fundamentalaccountingconcepts.wikispaces.com/Net+Income+%28Loss%29+Available+to+Common+Stockholders%2C+Basic</ref:URI>
+    </reference>
+    <loc xlink:type="locator"
+      xlink:label="fac_NetIncomeLoss"
+      xlink:href="fac.xsd#fac_NetIncomeLoss" />
+    <referenceArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference"
+      xlink:from="fac_NetIncomeLoss" xlink:to="fac_NetIncomeLoss_ref" />
+    <reference xlink:type="resource"
+      xlink:role="http://www.xbrl.org/2003/role/reference"
+      xlink:label="fac_NetIncomeLoss_ref">
+      <ref:URI>http://fundamentalaccountingconcepts.wikispaces.com/Net+Income+%28Loss%29</ref:URI>
+    </reference>
+    <loc xlink:type="locator"
+      xlink:label="fac_NoncurrentAssets"
+      xlink:href="fac.xsd#fac_NoncurrentAssets" />
+    <referenceArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference"
+      xlink:from="fac_NoncurrentAssets" xlink:to="fac_NoncurrentAssets_ref" />
+    <reference xlink:type="resource"
+      xlink:role="http://www.xbrl.org/2003/role/reference"
+      xlink:label="fac_NoncurrentAssets_ref">
+      <ref:URI>http://fundamentalaccountingconcepts.wikispaces.com/Noncurrent+Assets</ref:URI>
+    </reference>
+    <loc xlink:type="locator"
+      xlink:label="fac_NoncurrentLiabilities"
+      xlink:href="fac.xsd#fac_NoncurrentLiabilities" />
+    <referenceArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference"
+      xlink:from="fac_NoncurrentLiabilities"
+      xlink:to="fac_NoncurrentLiabilities_ref" />
+    <reference xlink:type="resource"
+      xlink:role="http://www.xbrl.org/2003/role/reference"
+      xlink:label="fac_NoncurrentLiabilities_ref">
+      <ref:URI>http://fundamentalaccountingconcepts.wikispaces.com/Noncurrent+Liabilities</ref:URI>
+    </reference>
+    <loc xlink:type="locator"
+      xlink:label="fac_NonoperatingIncomeLoss"
+      xlink:href="fac.xsd#fac_NonoperatingIncomeLoss" />
+    <referenceArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference"
+      xlink:from="fac_NonoperatingIncomeLoss"
+      xlink:to="fac_NonoperatingIncomeLoss_ref" />
+    <reference xlink:type="resource"
+      xlink:role="http://www.xbrl.org/2003/role/reference"
+      xlink:label="fac_NonoperatingIncomeLoss_ref">
+      <ref:URI>http://fundamentalaccountingconcepts.wikispaces.com/Nonoperating+Income+%28Loss%29</ref:URI>
+    </reference>
+    <loc xlink:type="locator"
+      xlink:label="fac_OperatingExpenses"
+      xlink:href="fac.xsd#fac_OperatingExpenses" />
+    <referenceArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference"
+      xlink:from="fac_OperatingExpenses" xlink:to="fac_OperatingExpenses_ref" />
+    <reference xlink:type="resource"
+      xlink:role="http://www.xbrl.org/2003/role/reference"
+      xlink:label="fac_OperatingExpenses_ref">
+      <ref:URI>http://fundamentalaccountingconcepts.wikispaces.com/Operating+Expenses</ref:URI>
+    </reference>
+    <loc xlink:type="locator"
+      xlink:label="fac_OperatingIncomeLoss"
+      xlink:href="fac.xsd#fac_OperatingIncomeLoss" />
+    <referenceArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference"
+      xlink:from="fac_OperatingIncomeLoss" xlink:to="fac_OperatingIncomeLoss_ref" />
+    <reference xlink:type="resource"
+      xlink:role="http://www.xbrl.org/2003/role/reference"
+      xlink:label="fac_OperatingIncomeLoss_ref">
+      <ref:URI>http://fundamentalaccountingconcepts.wikispaces.com/Operating+Income+%28Loss%29</ref:URI>
+    </reference>
+    <loc xlink:type="locator"
+      xlink:label="fac_OtherComprehensiveIncomeLoss"
+      xlink:href="fac.xsd#fac_OtherComprehensiveIncomeLoss" />
+    <referenceArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference"
+      xlink:from="fac_OtherComprehensiveIncomeLoss"
+      xlink:to="fac_OtherComprehensiveIncomeLoss_ref" />
+    <reference xlink:type="resource"
+      xlink:role="http://www.xbrl.org/2003/role/reference"
+      xlink:label="fac_OtherComprehensiveIncomeLoss_ref">
+      <ref:URI>http://fundamentalaccountingconcepts.wikispaces.com/Other+Comprehensive+Income</ref:URI>
+    </reference>
+    <loc xlink:type="locator"
+      xlink:label="fac_OtherOperatingIncomeExpenses"
+      xlink:href="fac.xsd#fac_OtherOperatingIncomeExpenses" />
+    <referenceArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference"
+      xlink:from="fac_OtherOperatingIncomeExpenses"
+      xlink:to="fac_OtherOperatingIncomeExpenses_ref" />
+    <reference xlink:type="resource"
+      xlink:role="http://www.xbrl.org/2003/role/reference"
+      xlink:label="fac_OtherOperatingIncomeExpenses_ref">
+      <ref:URI>http://fundamentalaccountingconcepts.wikispaces.com/Other+Operating+Income</ref:URI>
+    </reference>
+    <loc xlink:type="locator"
+      xlink:label="fac_PreferredStockDividendsAndOtherAdjustments"
+      xlink:href="fac.xsd#fac_PreferredStockDividendsAndOtherAdjustments" />
+    <referenceArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference"
+      xlink:from="fac_PreferredStockDividendsAndOtherAdjustments"
+      xlink:to="fac_PreferredStockDividendsAndOtherAdjustments_ref" />
+    <reference xlink:type="resource"
+      xlink:role="http://www.xbrl.org/2003/role/reference"
+      xlink:label="fac_PreferredStockDividendsAndOtherAdjustments_ref">
+      <ref:URI>http://fundamentalaccountingconcepts.wikispaces.com/Preferred+Stock+Dividends+and+Other+Adjustments</ref:URI>
+    </reference>
+    <loc xlink:type="locator"
+      xlink:label="fac_ReturnOnAssets"
+      xlink:href="fac.xsd#fac_ReturnOnAssets" />
+    <referenceArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference"
+      xlink:from="fac_ReturnOnAssets" xlink:to="fac_ReturnOnAssets_ref" />
+    <reference xlink:type="resource"
+      xlink:role="http://www.xbrl.org/2003/role/reference"
+      xlink:label="fac_ReturnOnAssets_ref">
+      <ref:URI>http://fundamentalaccountingconcepts.wikispaces.com/Return+on+Assets</ref:URI>
+    </reference>
+    <loc xlink:type="locator"
+      xlink:label="fac_ReturnOnEquity"
+      xlink:href="fac.xsd#fac_ReturnOnEquity" />
+    <referenceArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference"
+      xlink:from="fac_ReturnOnEquity" xlink:to="fac_ReturnOnEquity_ref" />
+    <reference xlink:type="resource"
+      xlink:role="http://www.xbrl.org/2003/role/reference"
+      xlink:label="fac_ReturnOnEquity_ref">
+      <ref:URI>http://fundamentalaccountingconcepts.wikispaces.com/Return+on+Equity</ref:URI>
+    </reference>
+    <loc xlink:type="locator"
+      xlink:label="fac_ReturnOnSales"
+      xlink:href="fac.xsd#fac_ReturnOnSales" />
+    <referenceArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference"
+      xlink:from="fac_ReturnOnSales" xlink:to="fac_ReturnOnSales_ref" />
+    <reference xlink:type="resource"
+      xlink:role="http://www.xbrl.org/2003/role/reference"
+      xlink:label="fac_ReturnOnSales_ref">
+      <ref:URI>http://fundamentalaccountingconcepts.wikispaces.com/Return+on+Sales</ref:URI>
+    </reference>
+    <loc xlink:type="locator"
+      xlink:label="fac_Revenues"
+      xlink:href="fac.xsd#fac_Revenues" />
+    <referenceArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference"
+      xlink:from="fac_Revenues" xlink:to="fac_Revenues_ref" />
+    <reference xlink:type="resource"
+      xlink:role="http://www.xbrl.org/2003/role/reference"
+      xlink:label="fac_Revenues_ref">
+      <ref:URI>http://fundamentalaccountingconcepts.wikispaces.com/Revenues</ref:URI>
+    </reference>
+    <loc xlink:type="locator"
+      xlink:label="fac_SustainableGrowthRate"
+      xlink:href="fac.xsd#fac_SustainableGrowthRate" />
+    <referenceArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference"
+      xlink:from="fac_SustainableGrowthRate"
+      xlink:to="fac_SustainableGrowthRate_ref" />
+    <reference xlink:type="resource"
+      xlink:role="http://www.xbrl.org/2003/role/reference"
+      xlink:label="fac_SustainableGrowthRate_ref">
+      <ref:URI>http://fundamentalaccountingconcepts.wikispaces.com/Sustainable+Growth+Rate</ref:URI>
+    </reference>
+    <loc xlink:type="locator"
+      xlink:label="fac_TemporaryEquity"
+      xlink:href="fac.xsd#fac_TemporaryEquity" />
+    <referenceArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference"
+      xlink:from="fac_TemporaryEquity" xlink:to="fac_TemporaryEquity_ref" />
+    <reference xlink:type="resource"
+      xlink:role="http://www.xbrl.org/2003/role/reference"
+      xlink:label="fac_TemporaryEquity_ref">
+      <ref:URI>http://fundamentalaccountingconcepts.wikispaces.com/Temporary+Equity</ref:URI>
+    </reference>
+  </referenceLink>
+</linkbase>
