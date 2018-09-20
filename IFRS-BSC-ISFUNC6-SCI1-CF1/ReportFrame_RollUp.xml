@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Business rules expressed as XBRL Calculation  --><Relations>
+   <Network identifier="http://www.xbrl.org/2003/role/link"
+            label="http://www.xbrl.org/2003/role/link"/>
+   <Network identifier="http://www.xbrlsite.com/2018/Protototype/fac/ifrs/BalanceSheetClassified"
+            label="http://www.xbrlsite.com/2018/Protototype/fac/ifrs/BalanceSheetClassified">
+      <Concept name="fac:Assets" label="Assets" dataType="xbrli:monetaryItemType"
+               baseDataType="xbrli:monetaryItemType"
+               balance="debit"
+               periodType="instant">
+         <Concept name="fac:CurrentAssets" label="Current Assets"
+                  dataType="xbrli:monetaryItemType"
+                  baseDataType="xbrli:monetaryItemType"
+                  balance="debit"
+                  periodType="instant"/>
+         <Concept name="fac:NoncurrentAssets" label="Noncurrent Assets"
+                  dataType="xbrli:monetaryItemType"
+                  baseDataType="xbrli:monetaryItemType"
+                  balance="debit"
+                  periodType="instant"/>
+      </Concept>
+      <Concept name="fac:LiabilitiesAndEquity" label="Liabilities and Equity"
+               dataType="xbrli:monetaryItemType"
+               baseDataType="xbrli:monetaryItemType"
+               balance="credit"
+               periodType="instant">
+         <Concept name="fac:Liabilities" label="Liabilities" dataType="xbrli:monetaryItemType"
+                  baseDataType="xbrli:monetaryItemType"
+                  balance="credit"
+                  periodType="instant">
+            <Concept name="fac:CurrentLiabilities" label="Current Liabilities"
+                     dataType="xbrli:monetaryItemType"
+                     baseDataType="xbrli:monetaryItemType"
+                     balance="credit"
+                     periodType="instant"/>
+            <Concept name="fac:NoncurrentLiabilities" label="Noncurrent Liabilities"
+                     dataType="xbrli:monetaryItemType"
+                     baseDataType="xbrli:monetaryItemType"
+                     balance="credit"
+                     periodType="instant"/>
+         </Concept>
+         <Concept name="fac:Equity" label="Equity" dataType="xbrli:monetaryItemType"
+                  baseDataType="xbrli:monetaryItemType"
+                  balance="credit"
+                  periodType="instant">
+            <Concept name="fac:EquityAttributableToParent" label="Equity Attributable to Parent"
+                     dataType="xbrli:monetaryItemType"
+                     baseDataType="xbrli:monetaryItemType"
+                     balance="credit"
+                     periodType="instant"/>
+            <Concept name="fac:EquityAttributableToNoncontrollingInterest"
+                     label="Equity Attributable to Noncontrolling Interest"
+                     dataType="xbrli:monetaryItemType"
+                     baseDataType="xbrli:monetaryItemType"
+                     balance="credit"
+                     periodType="instant"/>
+         </Concept>
+      </Concept>
+   </Network>
+   <Network identifier="http://www.xbrlsite.com/2018/Protototype/fac/ifrs/CashFlowStatement"
+            label="http://www.xbrlsite.com/2018/Protototype/fac/ifrs/CashFlowStatement">
+      <Concept name="fac:NetCashFlow" label="Net Cash Flow" dataType="xbrli:monetaryItemType"
+               baseDataType="xbrli:monetaryItemType"
+               balance="debit"
+               periodType="duration">
+         <Concept name="fac:NetCashFlowFromOperatingActivities"
+                  label="Net Cash Flow from Operating Activities"
+                  dataType="xbrli:monetaryItemType"
+                  baseDataType="xbrli:monetaryItemType"
+                  balance="debit"
+                  periodType="duration">
+            <Concept name="fac:NetCashFlowFromOperatingActivitiesContinuing"
+                     label="Net Cash Flow from Operating Activities, Continuing"
+                     dataType="xbrli:monetaryItemType"
+                     baseDataType="xbrli:monetaryItemType"
+                     balance="debit"
+                     periodType="duration"/>
+            <Concept name="fac:NetCashFlowFromOperatingActivitiesDiscontinued"
+                     label="Net Cash Flow from Operating Activities, Discontinued"
+                     dataType="xbrli:monetaryItemType"
+                     baseDataType="xbrli:monetaryItemType"
+                     balance="debit"
+                     periodType="duration"/>
+         </Concept>
+         <Concept name="fac:NetCashFlowFromInvestingActivities"
+                  label="Net Cash Flow from Investing Activities"
+                  dataType="xbrli:monetaryItemType"
+                  baseDataType="xbrli:monetaryItemType"
+                  balance="debit"
+                  periodType="duration">
+            <Concept name="fac:NetCashFlowFromInvestingActivitiesContinuing"
+                     label="Net Cash Flow from Investing Activities, Continuing"
+                     dataType="xbrli:monetaryItemType"
+                     baseDataType="xbrli:monetaryItemType"
+                     balance="debit"
+                     periodType="duration"/>
+            <Concept name="fac:NetCashFlowFromInvestingActivitiesDiscontinued"
+                     label="Net Cash Flow from Investing Activities, Discontinued"
+                     dataType="xbrli:monetaryItemType"
+                     baseDataType="xbrli:monetaryItemType"
+                     balance="debit"
+                     periodType="duration"/>
+         </Concept>
+         <Concept name="fac:NetCashFlowFromFinancingActivities"
+                  label="Net Cash Flow from Financing Activities"
+                  dataType="xbrli:monetaryItemType"
+                  baseDataType="xbrli:monetaryItemType"
+                  balance="debit"
+                  periodType="duration">
+            <Concept name="fac:NetCashFlowFromFinancingActivitiesContinuing"
+                     label="Net Cash Flow from Financing Activities, Continuing"
+                     dataType="xbrli:monetaryItemType"
+                     baseDataType="xbrli:monetaryItemType"
+                     balance="debit"
+                     periodType="duration"/>
+            <Concept name="fac:NetCashFlowFromFinancingActivitiesDiscontinued"
+                     label="Net Cash Flow from Financing Activities, Discontinued"
+                     dataType="xbrli:monetaryItemType"
+                     baseDataType="xbrli:monetaryItemType"
+                     balance="debit"
+                     periodType="duration"/>
+         </Concept>
+         <Concept name="fac:ExchangeGainsLosses" label="Exchange Gains (Losses)"
+                  dataType="xbrli:monetaryItemType"
+                  baseDataType="xbrli:monetaryItemType"
+                  balance="debit"
+                  periodType="duration"/>
+      </Concept>
+   </Network>
+   <Network identifier="http://www.xbrlsite.com/2018/Protototype/fac/ifrs/ComprehensiveIncomeBreakdown"
+            label="http://www.xbrlsite.com/2018/Protototype/fac/ifrs/ComprehensiveIncomeBreakdown">
+      <Concept name="fac:ComprehensiveIncomeLoss" label="Comprehensive Income (Loss)"
+               dataType="xbrli:monetaryItemType"
+               baseDataType="xbrli:monetaryItemType"
+               balance="credit"
+               periodType="duration">
+         <Concept name="fac:ComprehensiveIncomeLossAttributableToParent"
+                  label="Comprehensive Income (Loss) Attributable to Parent"
+                  dataType="xbrli:monetaryItemType"
+                  baseDataType="xbrli:monetaryItemType"
+                  balance="credit"
+                  periodType="duration"/>
+         <Concept name="fac:ComprehensiveIncomeLossAttributableToNoncontrollingInterest"
+                  label="Comprehensive Income (Loss) Attributable to Noncontrolling Interest"
+                  dataType="xbrli:monetaryItemType"
+                  baseDataType="xbrli:monetaryItemType"
+                  balance="credit"
+                  periodType="duration"/>
+      </Concept>
+   </Network>
+   <Network identifier="http://www.xbrlsite.com/2018/Protototype/fac/ifrs/ContinuingDiscontuedBreakdown"
+            label="http://www.xbrlsite.com/2018/Protototype/fac/ifrs/ContinuingDiscontuedBreakdown">
+      <Concept name="fac:NetCashFlowContinuing" label="Net Cash Flow, Continuing"
+               dataType="xbrli:monetaryItemType"
+               baseDataType="xbrli:monetaryItemType"
+               balance="debit"
+               periodType="duration">
+         <Concept name="fac:NetCashFlowFromOperatingActivitiesContinuing"
+                  label="Net Cash Flow from Operating Activities, Continuing"
+                  dataType="xbrli:monetaryItemType"
+                  baseDataType="xbrli:monetaryItemType"
+                  balance="debit"
+                  periodType="duration"/>
+         <Concept name="fac:NetCashFlowFromInvestingActivitiesContinuing"
+                  label="Net Cash Flow from Investing Activities, Continuing"
+                  dataType="xbrli:monetaryItemType"
+                  baseDataType="xbrli:monetaryItemType"
+                  balance="debit"
+                  periodType="duration"/>
+         <Concept name="fac:NetCashFlowFromFinancingActivitiesContinuing"
+                  label="Net Cash Flow from Financing Activities, Continuing"
+                  dataType="xbrli:monetaryItemType"
+                  baseDataType="xbrli:monetaryItemType"
+                  balance="debit"
+                  periodType="duration"/>
+      </Concept>
+      <Concept name="fac:NetCashFlowDiscontinued" label="Net Cash Flow, Discontinued"
+               dataType="xbrli:monetaryItemType"
+               baseDataType="xbrli:monetaryItemType"
+               balance="debit"
+               periodType="duration">
+         <Concept name="fac:NetCashFlowFromOperatingActivitiesDiscontinued"
+                  label="Net Cash Flow from Operating Activities, Discontinued"
+                  dataType="xbrli:monetaryItemType"
+                  baseDataType="xbrli:monetaryItemType"
+                  balance="debit"
+                  periodType="duration"/>
+         <Concept name="fac:NetCashFlowFromInvestingActivitiesDiscontinued"
+                  label="Net Cash Flow from Investing Activities, Discontinued"
+                  dataType="xbrli:monetaryItemType"
+                  baseDataType="xbrli:monetaryItemType"
+                  balance="debit"
+                  periodType="duration"/>
+         <Concept name="fac:NetCashFlowFromFinancingActivitiesDiscontinued"
+                  label="Net Cash Flow from Financing Activities, Discontinued"
+                  dataType="xbrli:monetaryItemType"
+                  baseDataType="xbrli:monetaryItemType"
+                  balance="debit"
+                  periodType="duration"/>
+      </Concept>
+   </Network>
+   <Network identifier="http://www.xbrlsite.com/2018/Protototype/fac/ifrs/GeneralInformation"
+            label="http://www.xbrlsite.com/2018/Protototype/fac/ifrs/GeneralInformation"/>
+   <Network identifier="http://www.xbrlsite.com/2018/Protototype/fac/ifrs/IncomeStatementSingleStep_Special6"
+            label="http://www.xbrlsite.com/2018/Protototype/fac/ifrs/IncomeStatementSingleStep_Special6">
+      <Concept name="fac:NetIncomeLoss" label="Net Income (Loss)"
+               dataType="xbrli:monetaryItemType"
+               baseDataType="xbrli:monetaryItemType"
+               balance="credit"
+               periodType="duration">
+         <Concept name="fac:IncomeLossFromContinuingOperationsAfterTax"
+                  label="Income (Loss) from Continuing Operations After Tax"
+                  dataType="xbrli:monetaryItemType"
+                  baseDataType="xbrli:monetaryItemType"
+                  balance="credit"
+                  periodType="duration">
+            <Concept name="fac:IncomeLossFromContinuingOperationsBeforeTax"
+                     label="Income (Loss) from Continuing Operations Before Tax"
+                     dataType="xbrli:monetaryItemType"
+                     baseDataType="xbrli:monetaryItemType"
+                     balance="credit"
+                     periodType="duration">
+               <Concept name="fac:OperatingIncomeLoss" label="Operating Income (Loss)"
+                        dataType="xbrli:monetaryItemType"
+                        baseDataType="xbrli:monetaryItemType"
+                        balance="credit"
+                        periodType="duration">
+                  <Concept name="fac:GrossProfit" label="Gross Profit" dataType="xbrli:monetaryItemType"
+                           baseDataType="xbrli:monetaryItemType"
+                           balance="credit"
+                           periodType="duration">
+                     <Concept name="fac:Revenues" label="Revenues" dataType="xbrli:monetaryItemType"
+                              baseDataType="xbrli:monetaryItemType"
+                              balance="credit"
+                              periodType="duration"/>
+                     <Concept name="fac:CostOfRevenue" label="Cost of Revenue"
+                              dataType="xbrli:monetaryItemType"
+                              baseDataType="xbrli:monetaryItemType"
+                              balance="debit"
+                              periodType="duration"/>
+                  </Concept>
+                  <Concept name="fac:OperatingExpenses" label="Operating Expenses"
+                           dataType="xbrli:monetaryItemType"
+                           baseDataType="xbrli:monetaryItemType"
+                           balance="debit"
+                           periodType="duration"/>
+               </Concept>
+               <Concept name="fac:NonoperatingIncomeLoss" label="Nonoperating Income (Loss)"
+                        dataType="xbrli:monetaryItemType"
+                        baseDataType="xbrli:monetaryItemType"
+                        balance="credit"
+                        periodType="duration"/>
+            </Concept>
+            <Concept name="fac:IncomeTaxExpenseBenefit" label="Income Tax Expense (Benefit)"
+                     dataType="xbrli:monetaryItemType"
+                     baseDataType="xbrli:monetaryItemType"
+                     balance="debit"
+                     periodType="duration"/>
+         </Concept>
+         <Concept name="fac:IncomeLossFromDiscontinuedOperationsNetOfTax"
+                  label="Income (Loss) from Discontinued Operations, Net of Tax"
+                  dataType="xbrli:monetaryItemType"
+                  baseDataType="xbrli:monetaryItemType"
+                  balance="credit"
+                  periodType="duration"/>
+      </Concept>
+   </Network>
+   <Network identifier="http://www.xbrlsite.com/2018/Protototype/fac/ifrs/KeyRatios"
+            label="http://www.xbrlsite.com/2018/Protototype/fac/ifrs/KeyRatios"/>
+   <Network identifier="http://www.xbrlsite.com/2018/Protototype/fac/ifrs/NetCashFlowBreakdown"
+            label="http://www.xbrlsite.com/2018/Protototype/fac/ifrs/NetCashFlowBreakdown">
+      <Concept name="fac:NetCashFlow" label="Net Cash Flow" dataType="xbrli:monetaryItemType"
+               baseDataType="xbrli:monetaryItemType"
+               balance="debit"
+               periodType="duration">
+         <Concept name="fac:NetCashFlowContinuing" label="Net Cash Flow, Continuing"
+                  dataType="xbrli:monetaryItemType"
+                  baseDataType="xbrli:monetaryItemType"
+                  balance="debit"
+                  periodType="duration"/>
+         <Concept name="fac:NetCashFlowDiscontinued" label="Net Cash Flow, Discontinued"
+                  dataType="xbrli:monetaryItemType"
+                  baseDataType="xbrli:monetaryItemType"
+                  balance="debit"
+                  periodType="duration"/>
+         <Concept name="fac:ExchangeGainsLosses" label="Exchange Gains (Losses)"
+                  dataType="xbrli:monetaryItemType"
+                  baseDataType="xbrli:monetaryItemType"
+                  balance="debit"
+                  periodType="duration"/>
+      </Concept>
+   </Network>
+   <Network identifier="http://www.xbrlsite.com/2018/Protototype/fac/ifrs/NetIncomeLossBreakdown"
+            label="http://www.xbrlsite.com/2018/Protototype/fac/ifrs/NetIncomeLossBreakdown">
+      <Concept name="fac:NetIncomeLoss" label="Net Income (Loss)"
+               dataType="xbrli:monetaryItemType"
+               baseDataType="xbrli:monetaryItemType"
+               balance="credit"
+               periodType="duration">
+         <Concept name="fac:NetIncomeLossAttributableToParent"
+                  label="Net Income (Loss) Attributable to Parent"
+                  dataType="xbrli:monetaryItemType"
+                  baseDataType="xbrli:monetaryItemType"
+                  balance="credit"
+                  periodType="duration"/>
+         <Concept name="fac:NetIncomeLossAttributableToNoncontrollingInterest"
+                  label="Net Income (Loss) Attributable to Noncontrolling Interest"
+                  dataType="xbrli:monetaryItemType"
+                  baseDataType="xbrli:monetaryItemType"
+                  balance="credit"
+                  periodType="duration"/>
+      </Concept>
+   </Network>
+   <Network identifier="http://www.xbrlsite.com/2018/Protototype/fac/ifrs/StatementOfComprehensiveIncome"
+            label="http://www.xbrlsite.com/2018/Protototype/fac/ifrs/StatementOfComprehensiveIncome">
+      <Concept name="fac:ComprehensiveIncomeLoss" label="Comprehensive Income (Loss)"
+               dataType="xbrli:monetaryItemType"
+               baseDataType="xbrli:monetaryItemType"
+               balance="credit"
+               periodType="duration">
+         <Concept name="fac:NetIncomeLoss" label="Net Income (Loss)"
+                  dataType="xbrli:monetaryItemType"
+                  baseDataType="xbrli:monetaryItemType"
+                  balance="credit"
+                  periodType="duration"/>
+         <Concept name="fac:OtherComprehensiveIncomeLoss"
+                  label="Other Comprehensive Income (Loss)"
+                  dataType="xbrli:monetaryItemType"
+                  baseDataType="xbrli:monetaryItemType"
+                  balance="credit"
+                  periodType="duration"/>
+      </Concept>
+   </Network>
+   <Network identifier="http://www.xbrlsite.com/2018/Protototype/fac/ifrs/ValidationResults2"
+            label="http://www.xbrlsite.com/2018/Protototype/fac/ifrs/ValidationResults2"/>
+</Relations>

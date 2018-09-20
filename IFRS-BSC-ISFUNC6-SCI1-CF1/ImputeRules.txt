@@ -1,0 +1,510 @@
+'Created by Charles Hoffman, CPA 8/2/2018 4:11:39 PM
+'Reporting Style Code: IFRS-BSC-ISFUNC6-SCI1-CF1
+  
+'XXXXXXXXXXXXXXXXXXXXXXXX NETWORK: 001-General Information (http://www.xbrlsite.com/2018/Protototype/fac/ifrs/GeneralInformation)
+'General information
+'Reviewed 2015-11-13
+
+
+
+'XXXXXXXXXXXXXXXXXXXXXXXX NETWORK: 101-Balance Sheet, Classified (http://www.xbrlsite.com/2018/Protototype/fac/ifrs/BalanceSheetClassified)
+'Balance sheet (Classified);
+'Reviewed 2018-06-23
+
+    'Determine which statements are used
+    IsClassifiedBalanceSheet = CurrentAssets
+
+
+    'BS-Impute-31: (Creates the total for CurrentAssets if it was not explicitly reported
+    If CurrentAssets = 0 and CurrentAssetsExcludingHeldForSale <> 0 and AssetsHeldForSale <> 0 Then
+        CurrentAssets = CurrentAssetsExcludingHeldForSale + AssetsHeldForSale
+    End If
+	
+    'BS-Impute-32: Creates the total for CurrentLiabilities if it was not explicitly reported
+    If CurrentLiabilities = 0 and CurrentLiabilitiesExcludingHeldForSale <> 0 and (LiabilitiesHeldForSale <> 0 or LiabilitiesHeldForSale = 0) Then
+        CurrentLiabilities = CurrentLiabilitiesExcludingHeldForSale + LiabilitiesHeldForSale
+    End If
+
+    'BS-Impute-04:
+    If NoncurrentAssets = 0 and Assets <> 0 and CurrentAssets <> 0 Then
+        NoncurrentAssets = Assets - CurrentAssets
+    End If
+    
+    'BS-Impute-06: 
+    If Equity = 0 and EquityAttributableToNoncontrollingInterest <> 0 and EquityAttributableToParent <> 0 Then
+        Equity = EquityAttributableToParent + EquityAttributableToNoncontrollingInterest
+    End If
+    
+    'BS-Impute-07:
+    If Equity = 0 and EquityAttributableToNoncontrollingInterest = 0 and EquityAttributableToParent <> 0 Then
+        Equity = EquityAttributableToParent
+    End If
+    
+    'BS-Impute-08:
+    If Equity = 0 Then
+        Equity = EquityAttributableToParent + EquityAttributableToNoncontrollingInterest
+    End If
+    
+    'BS-Impute-09: 
+    If EquityAttributableToParent = 0 and Equity <> 0 and EquityAttributableToNoncontrollingInterest <> 0 Then
+        EquityAttributableToParent = Equity - EquityAttributableToNoncontrollingInterest
+    End If
+    
+    'BS-Impute-10: 
+    If EquityAttributableToParent = 0 and Equity <> 0 and EquityAttributableToNoncontrollingInterest = 0 Then
+        EquityAttributableToParent = Equity
+    End If
+
+    'BS-Impute-12:
+    If NoncurrentLiabilities = 0 and CurrentLiabilities <> 0 and Liabilities <> 0 Then
+        NoncurrentLiabilities = Liabilities - CurrentLiabilities
+    End If
+
+    'BS-Impute-14: 
+    If Liabilities = 0 and CurrentLiabilities <> 0 and NoncurrentLiabilities <> 0 Then
+        Liabilities = CurrentLiabilities + NoncurrentLiabilities
+    End If
+
+    'BS-Impute-11: 
+    If Liabilities = 0 and Equity <> 0 Then
+        Liabilities = LiabilitiesAndEquity - Equity
+    End If
+
+    'BS-Impute-56: (Run a SECOND TIME in case total liabilities was not yet known) 
+    If NoncurrentLiabilities = 0 and CurrentLiabilities <> 0 and Liabilities <> 0 Then
+        NoncurrentLiabilities = Liabilities - CurrentLiabilities
+    End If
+
+    'BS-Impute-13:
+    If Liabilities = 0 and CurrentLiabilities <> 0 and NoncurrentLiabilities = 0 Then
+        Liabilities = CurrentLiabilities
+    End If
+    
+    'BS-Impute-15: 
+    If EquityAttributableToParent <> 0 and Equity <> 0 and EquityAttributableToNoncontrollingInterest <> 0 and EquityAttributableToParent = Equity Then
+        EquityAttributableToParent = Equity - EquityAttributableToNoncontrollingInterest
+    End If
+
+    'BS-Impute-17:
+    If EquityAttributableToNoncontrollingInterest = 0 and Equity <> 0 and EquityAttributableToParent <> 0 Then
+        EquityAttributableToNoncontrollingInterest = Equity - EquityAttributableToParent
+    End If
+    
+    'These following rules were added to match PURE and EXCEL
+    'BS-Impute-01
+    If Assets = 0 and NoncurrentAssets = 0 and Assets <> LiabilitiesAndEquity and CurrentAssets = LiabilitiesAndEquity Then
+        Assets = CurrentAssets
+    End If
+
+    'BS-Impute-02
+    If Assets = 0 and LiabilitiesAndEquity <> 0 and CurrentAssets = LiabilitiesAndEquity Then
+        Assets = CurrentAssets
+    End If
+
+    'BS-Impute-03
+    If Assets = 0 and NoncurrentAssets = 0 and LiabilitiesAndEquity <> 0 and (LiabilitiesAndEquity = Liabilities + Equity) Then
+        Assets = CurrentAssets
+    End If
+    
+    'BS-Impute-05
+    If LiabilitiesAndEquity = 0 and Assets <> 0 Then
+        LiabilitiesAndEquity = Assets
+    End If
+
+    'BS-Impute-16
+    If CurrentLiabilities = 0 and NoncurrentLiabilities = 0 and Liabilities <> 0 Then
+        CurrentLiabilities = Liabilities
+    End If
+
+    'BS-Impute-18
+    If CurrentAssets = 0 and Assets <> 0 and LiabilitiesAndEquity <> 0 and LiabilitiesAndEquity = Assets Then
+        CurrentAssets = Assets
+    End If
+    
+        
+    '******************************************************
+    'VERIFICATION RULES: Balance Sheet relations
+
+    BS1 = Equity - (EquityAttributableToParent + EquityAttributableToNoncontrollingInterest)
+    BS2 = Assets - LiabilitiesAndEquity
+    BS3 = Assets - (CurrentAssets + NoncurrentAssets)
+    BS4 = Liabilities - (CurrentLiabilities + NoncurrentLiabilities)
+    BS5 = LiabilitiesAndEquity - (Liabilities + Equity)
+
+
+
+'XXXXXXXXXXXXXXXXXXXXXXXX NETWORK: 201.7-Income Statement, Multi Step, With Operating Income, Special 6 (http://www.xbrlsite.com/2018/Protototype/fac/ifrs/IncomeStatementSingleStep_Special6)
+'Income statement - Multi-Step, With Gross Profit and Operating income (loss) explicitly reported
+'These rules for Special6
+'Reviewed 2018-07-11
+
+	 'IS-Impute-01
+    If IncomeTaxExpenseBenefit = 0 and (IncomeTaxExpenseBenefitCurrent <> 0 or IncomeTaxExpenseBenefitDeferred <> 0) Then
+        IncomeTaxExpenseBenefit = IncomeTaxExpenseBenefitCurrent + IncomeTaxExpenseBenefitDeferred
+    End If
+
+	 'IS-Impute-04
+    If IncomeLossFromContinuingOperationsAfterTax = 0 and IncomeLossFromContinuingOperationsBeforeTax <> 0 Then
+        IncomeLossFromContinuingOperationsAfterTax = IncomeLossFromContinuingOperationsBeforeTax - IncomeTaxExpenseBenefit
+    End If
+
+	 'IS-Impute-05
+    If IncomeLossFromContinuingOperationsAfterTax = 0 and NetIncomeLoss <> 0 and IncomeLossFromDiscontinuedOperationsNetOfTax = 0 Then
+        IncomeLossFromContinuingOperationsAfterTax = NetIncomeLoss
+    End If
+
+	 'IS-Impute-06
+    If NetIncomeLoss = 0 and IncomeLossFromContinuingOperationsAfterTax <> 0 Then
+        NetIncomeLoss = IncomeLossFromContinuingOperationsAfterTax + IncomeLossFromDiscontinuedOperationsNetOfTax
+    End If
+
+	 'IS-Impute-07
+    If NetIncomeLoss = 0 and NetIncomeLossAttributableToNoncontrollingInterest = 0 and NetIncomeLossAttributableToParent <> 0 Then
+        NetIncomeLoss = NetIncomeLossAttributableToParent
+    End If
+
+	 'IS-Impute-08
+    If IncomeLossFromContinuingOperationsBeforeTax = 0 and IncomeLossFromContinuingOperationsAfterTax <> 0 and IncomeTaxExpenseBenefit = 0 Then
+        IncomeLossFromContinuingOperationsBeforeTax = IncomeLossFromContinuingOperationsAfterTax
+    End If
+
+	 'IS-Impute-09
+    If NetIncomeLoss = 0 and NetIncomeLossAttributableToParent <> 0 and NetIncomeLossAttributableToNoncontrollingInterest <> 0 Then
+        NetIncomeLoss = NetIncomeLossAttributableToParent + NetIncomeLossAttributableToNoncontrollingInterest
+    End If
+
+	 'IS-Impute-10
+    If NetIncomeLossAttributableToParent = 0 and NetIncomeLossAttributableToNoncontrollingInterest <> 0 and NetIncomeLoss <> 0 Then
+        NetIncomeLossAttributableToParent = NetIncomeLoss - NetIncomeLossAttributableToNoncontrollingInterest
+    End If
+
+	 'IS-Impute-12
+    If NetIncomeLossAttributableToParent = 0 and NetIncomeLossAttributableToNoncontrollingInterest = 0 and NetIncomeLoss <> 0 Then
+        NetIncomeLossAttributableToParent = NetIncomeLoss
+    End If          
+
+	 'IS-Impute-15
+    If IncomeLossFromContinuingOperationsAfterTax = 0 and NetIncomeLoss <> 0 Then
+        IncomeLossFromContinuingOperationsAfterTax = NetIncomeLoss - IncomeLossFromDiscontinuedOperationsNetOfTax
+    End If
+
+	 'IS-Impute-16
+    If IncomeLossFromContinuingOperationsAfterTax = 0 and IncomeTaxExpenseBenefit <> 0 and IncomeLossFromContinuingOperationsBeforeTax <> 0 Then
+        IncomeLossFromContinuingOperationsAfterTax = IncomeLossFromContinuingOperationsBeforeTax - IncomeTaxExpenseBenefit
+    End If
+            
+	 'IS-Impute-18
+    If IncomeLossFromContinuingOperationsBeforeTax = 0 and IncomeLossFromContinuingOperationsAfterTax <> 0 Then
+        IncomeLossFromContinuingOperationsBeforeTax = IncomeLossFromContinuingOperationsAfterTax + IncomeTaxExpenseBenefit
+    End If
+            
+	 'NOTE: Because there is no consistently used total for NonoperatingIncomeLoss, there is NO MAPPING to an IFRS concept; this will always be imputed.
+
+	 'IS-Impute-20
+    If IncomeLossFromContinuingOperationsBeforeTax <> 0 and OperatingIncomeLoss <> 0 Then
+    	NonoperatingIncomeLoss = IncomeLossFromContinuingOperationsBeforeTax - OperatingIncomeLoss 
+    End If   
+
+	 'IS-Impute-21
+    If GrossProfit = 0 and Revenues <> 0 and CostOfRevenue <> 0 Then
+        GrossProfit = Revenues - CostOfRevenue
+    End If   
+
+	 'IS-Impute-22
+    If OperatingExpenses = 0 and OperatingIncomeLoss <> 0 Then
+        OperatingExpenses = GrossProfit - OperatingIncomeLoss
+    End If   
+
+	 'IS-Impute-23
+    If CostOfRevenue = 0 and Revenues <> 0 and GrossProfit <> 0 Then
+        CostOfRevenue = Revenues - GrossProfit
+    End If   
+
+	 'IS-Impute-24
+    If NetIncomeLossAttributableToNoncontrollingInterest = 0 and NetIncomeLoss <> 0 and NetIncomeLossAttributableToParent <> 0 and EquityAttributableToNoncontrollingInterest <> 0 Then
+        NetIncomeLossAttributableToNoncontrollingInterest = NetIncomeLoss - NetIncomeLossAttributableToParent
+    End If
+    
+
+    'Determine if income statement is multi-step or single-step
+    'IsMultiStepIncomeStatement = GrossProfit
+
+'VERIFICATION RULES: Income statement
+
+        
+    IS1 = GrossProfit - (Revenues - CostOfRevenue)
+    IS2 = OperatingIncomeLoss - (GrossProfit - OperatingExpenses)
+    IS3 = 0
+    IS4 = IncomeLossFromContinuingOperationsBeforeTax - (OperatingIncomeLoss + NonoperatingIncomeLoss)
+    IS5 = IncomeLossFromContinuingOperationsAfterTax - (IncomeLossFromContinuingOperationsBeforeTax - IncomeTaxExpenseBenefit)
+    IS6 = NetIncomeLoss - (IncomeLossFromContinuingOperationsAfterTax + IncomeLossFromDiscontinuedOperationsNetOfTax)
+    IS7 = NetIncomeLoss - (NetIncomeLossAttributableToParent + NetIncomeLossAttributableToNoncontrollingInterest)
+    IS8 = 0
+    
+    IS11 = 0
+	 IS12 = 0
+    IS13 = 0
+    IS14 = 0
+
+
+
+
+
+'XXXXXXXXXXXXXXXXXXXXXXXX NETWORK: 211-Net Income (Loss) Breakdown (http://www.xbrlsite.com/2018/Protototype/fac/ifrs/NetIncomeLossBreakdown)
+'Empty
+'Reviewed 2015-11-13
+
+
+'XXXXXXXXXXXXXXXXXXXXXXXX NETWORK: 301-Statement of Comprehensive Income (http://www.xbrlsite.com/2018/Protototype/fac/ifrs/StatementOfComprehensiveIncome)
+'Statement of comprehensive income
+'Reviewed 2018-07-11
+
+
+    'IS-Impute-01: 
+    If ComprehensiveIncomeLossAttributableToParent = 0 and ComprehensiveIncomeLossAttributableToNoncontrollingInterest = 0 and ComprehensiveIncomeLoss <> 0 Then
+        ComprehensiveIncomeLossAttributableToParent = ComprehensiveIncomeLoss
+    End If
+
+    'IS-Impute-02: 
+    If ComprehensiveIncomeLossAttributableToParent = 0 and ComprehensiveIncomeLossAttributableToNoncontrollingInterest <> 0 and ComprehensiveIncomeLoss <> 0 Then
+        ComprehensiveIncomeLossAttributableToParent = ComprehensiveIncomeLoss - ComprehensiveIncomeLossAttributableToNoncontrollingInterest
+    End If
+
+
+    'IS-Impute-03: 
+    If ComprehensiveIncomeLoss = 0 and ComprehensiveIncomeLossAttributableToNoncontrollingInterest <> 0 and ComprehensiveIncomeLossAttributableToParent <> 0 Then
+        ComprehensiveIncomeLoss = ComprehensiveIncomeLossAttributableToParent + ComprehensiveIncomeLossAttributableToNoncontrollingInterest
+    End If
+
+    'IS-Impute-04: 
+    If ComprehensiveIncomeLoss = 0 and ComprehensiveIncomeLossAttributableToNoncontrollingInterest = 0 and ComprehensiveIncomeLossAttributableToParent <> 0 Then
+        ComprehensiveIncomeLoss = ComprehensiveIncomeLossAttributableToParent
+    End If
+
+    'IS-Impute-05: 
+    If ComprehensiveIncomeLossAttributableToNoncontrollingInterest = 0 and ComprehensiveIncomeLoss <> 0 and ComprehensiveIncomeLossAttributableToParent <> 0 Then
+        ComprehensiveIncomeLossAttributableToNoncontrollingInterest = ComprehensiveIncomeLoss - ComprehensiveIncomeLossAttributableToParent
+    End If
+
+    'IS-Impute-06: 
+    If ComprehensiveIncomeLoss = 0 and ComprehensiveIncomeLossAttributableToParent = 0 and ComprehensiveIncomeLossAttributableToNoncontrollingInterest = 0 and OtherComprehensiveIncomeLoss = 0 Then
+        ComprehensiveIncomeLoss = NetIncomeLoss
+    End If
+            
+    'IS-Impute-07: 
+    If OtherComprehensiveIncomeLoss = 0 and ComprehensiveIncomeLoss <> 0 Then
+        OtherComprehensiveIncomeLoss = ComprehensiveIncomeLoss - NetIncomeLoss
+    End If
+
+    'IS-Impute-08: 
+    If ComprehensiveIncomeLossAttributableToParent = 0 and ComprehensiveIncomeLossAttributableToNoncontrollingInterest = 0 and ComprehensiveIncomeLoss <> 0 Then
+        ComprehensiveIncomeLossAttributableToParent = ComprehensiveIncomeLoss
+    End If
+
+    'IS-Impute-09:
+    If ComprehensiveIncomeLossAttributableToNoncontrollingInterest = 0 and ComprehensiveIncomeLossAttributableToParent <> 0 and ComprehensiveIncomeLoss <> 0 Then
+        ComprehensiveIncomeLossAttributableToNoncontrollingInterest = ComprehensiveIncomeLoss - ComprehensiveIncomeLossAttributableToParent
+    End If
+
+'VERIFICATION RULES: Statement of comprehensive income
+
+    IS9 = ComprehensiveIncomeLoss - (ComprehensiveIncomeLossAttributableToParent + ComprehensiveIncomeLossAttributableToNoncontrollingInterest)
+    IS10 = ComprehensiveIncomeLoss - (NetIncomeLoss + OtherComprehensiveIncomeLoss)
+    
+
+
+
+'XXXXXXXXXXXXXXXXXXXXXXXX NETWORK: 311-Comprehensive Income (Loss) Breakdown (http://www.xbrlsite.com/2018/Protototype/fac/ifrs/ComprehensiveIncomeBreakdown)
+'Empty
+'Reviewed 2015-11-13
+
+
+'XXXXXXXXXXXXXXXXXXXXXXXX NETWORK: 401-Cash Flow Statement (http://www.xbrlsite.com/2018/Protototype/fac/ifrs/CashFlowStatement)
+'Cash flow statement (exchange gains included in net cash flow)
+'Reviewed 2018-07-11
+
+'Refactored version
+
+    'CF-Impute-01: Added 2015-11-12 If total discontinued is reported but detail is not, assume total is operating
+    If NetCashFlowFromOperatingActivitiesDiscontinued = 0 and NetCashFlowFromInvestingActivitiesDiscontinued = 0 and NetCashFlowFromFinancingActivitiesDiscontinued = 0 and NetCashFlowDiscontinued <> 0 Then
+        NetCashFlowFromOperatingActivitiesDiscontinued = NetCashFlowDiscontinued
+    End If
+
+
+    'CF-Impute-02:
+    If NetCashFlowFromOperatingActivitiesContinuing = 0 and NetCashFlowFromOperatingActivities <> 0 Then
+        NetCashFlowFromOperatingActivitiesContinuing = NetCashFlowFromOperatingActivities - NetCashFlowFromOperatingActivitiesDiscontinued
+    End If
+
+    'CF-Impute-03:
+    If  NetCashFlowFromInvestingActivitiesContinuing = 0 and NetCashFlowFromInvestingActivities <> 0 Then
+        NetCashFlowFromInvestingActivitiesContinuing = NetCashFlowFromInvestingActivities - NetCashFlowFromInvestingActivitiesDiscontinued
+    End If
+
+    'CF-Impute-104:
+    If NetCashFlowFromFinancingActivitiesContinuing = 0 and NetCashFlowFromFinancingActivities <> 0 Then
+        NetCashFlowFromFinancingActivitiesContinuing = NetCashFlowFromFinancingActivities - NetCashFlowFromFinancingActivitiesDiscontinued
+    End If
+
+
+    'CF-Impute-05:
+    If NetCashFlowFromOperatingActivities = 0 Then
+        NetCashFlowFromOperatingActivities = NetCashFlowFromOperatingActivitiesContinuing + NetCashFlowFromOperatingActivitiesDiscontinued
+    End If
+
+    'CF-Impute-06:
+    If NetCashFlowFromInvestingActivities = 0 Then
+        NetCashFlowFromInvestingActivities = NetCashFlowFromInvestingActivitiesContinuing + NetCashFlowFromInvestingActivitiesDiscontinued
+    End If
+
+    'CF-Impute-07:
+    If NetCashFlowFromFinancingActivities = 0 Then
+        NetCashFlowFromFinancingActivities = NetCashFlowFromFinancingActivitiesContinuing + NetCashFlowFromFinancingActivitiesDiscontinued
+    End If
+
+
+
+    'CF-Impute-08:
+    If NetCashFlowDiscontinued = 0 Then
+        NetCashFlowDiscontinued = NetCashFlowFromOperatingActivitiesDiscontinued + NetCashFlowFromInvestingActivitiesDiscontinued + NetCashFlowFromFinancingActivitiesDiscontinued
+    End If
+
+
+    'CF-Impute-09:
+    If NetCashFlowContinuing = 0 and NetCashFlow <> 0 Then
+        NetCashFlowContinuing = NetCashFlow - NetCashFlowDiscontinued - ExchangeGainsLosses
+    End If
+    
+
+    'CF-Impute-10:
+    If NetCashFlow = 0 and NetCashFlowContinuing <> 0 Then
+        NetCashFlow = NetCashFlowContinuing + NetCashFlowDiscontinued  + ExchangeGainsLosses
+    End If
+    
+
+
+    'CF-Impute-11:
+    If NetCashFlowFromInvestingActivitiesContinuing = 0 and NetCashFlowFromOperatingActivitiesContinuing <> 0 and NetCashFlowFromFinancingActivitiesContinuing <> 0 and (NetCashFlowContinuing - (NetCashFlowFromOperatingActivitiesContinuing + NetCashFlowFromInvestingActivitiesContinuing + NetCashFlowFromFinancingActivitiesContinuing) <> 0) Then
+        NetCashFlowFromInvestingActivitiesContinuing = NetCashFlowContinuing - (NetCashFlowFromOperatingActivitiesContinuing + NetCashFlowFromFinancingActivitiesContinuing)
+    End If
+
+    'CF-Impute-12:
+    If NetCashFlowFromFinancingActivitiesContinuing = 0 and NetCashFlowFromOperatingActivitiesContinuing <> 0 and NetCashFlowFromInvestingActivitiesContinuing <> 0 and (NetCashFlowContinuing - (NetCashFlowFromOperatingActivitiesContinuing + NetCashFlowFromInvestingActivitiesContinuing + NetCashFlowFromFinancingActivitiesContinuing) <> 0) Then
+        NetCashFlowFromFinancingActivitiesContinuing = NetCashFlowContinuing - (NetCashFlowFromOperatingActivitiesContinuing + NetCashFlowFromInvestingActivitiesContinuing)
+    End If
+
+    'CF-Impute-13:
+    If NetCashFlowFromInvestingActivities = 0 and NetCashFlowFromOperatingActivities <> 0 and NetCashFlowFromFinancingActivities <> 0 and (NetCashFlow - (NetCashFlowFromOperatingActivities + NetCashFlowFromInvestingActivities + NetCashFlowFromFinancingActivities + ExchangeGainsLosses) <> 0) Then
+        NetCashFlowFromInvestingActivities = NetCashFlow - (NetCashFlowFromOperatingActivities + NetCashFlowFromFinancingActivities + ExchangeGainsLosses)
+    End If
+
+    'CF-Impute-14:
+    If NetCashFlowFromFinancingActivities = 0 and NetCashFlowFromOperatingActivities <> 0 and NetCashFlowFromInvestingActivities <> 0 and (NetCashFlow - (NetCashFlowFromOperatingActivities + NetCashFlowFromInvestingActivities + NetCashFlowFromFinancingActivities + ExchangeGainsLosses) <> 0) Then
+        NetCashFlowFromFinancingActivities = NetCashFlow - (NetCashFlowFromOperatingActivities + NetCashFlowFromInvestingActivities + ExchangeGainsLosses)
+    End If
+
+    'CF-Impute-15:
+    If NetCashFlowContinuing = 0 Then
+        NetCashFlowContinuing = NetCashFlowFromOperatingActivitiesContinuing + NetCashFlowFromInvestingActivitiesContinuing + NetCashFlowFromFinancingActivitiesContinuing
+    End If
+
+    'CF-Impute-16:
+    If NetCashFlowFromOperatingActivities = 0 and NetCashFlowFromOperatingActivitiesContinuing <> 0 and NetCashFlowFromOperatingActivitiesDiscontinued = 0 Then
+        NetCashFlowFromOperatingActivities = NetCashFlowFromOperatingActivitiesContinuing
+    End If
+
+    'CF-Impute-17:
+    If NetCashFlowFromInvestingActivities = 0 and NetCashFlowFromInvestingActivitiesContinuing <> 0 and NetCashFlowFromInvestingActivitiesDiscontinued = 0 Then
+        NetCashFlowFromInvestingActivities = NetCashFlowFromInvestingActivitiesContinuing
+    End If
+
+    'CF-Impute-18:
+    If NetCashFlowFromFinancingActivities = 0 and NetCashFlowFromFinancingActivitiesContinuing <> 0 and NetCashFlowFromFinancingActivitiesDiscontinued = 0 Then
+        NetCashFlowFromFinancingActivities = NetCashFlowFromFinancingActivitiesContinuing
+    End If
+
+   'CF-Impute-19:
+    If NetCashFlowFromInvestingActivitiesContinuing = 0 and NetCashFlowFromInvestingActivitiesDiscontinued = 0 and NetCashFlowFromInvestingActivities <> 0 Then
+        NetCashFlowFromInvestingActivitiesContinuing = NetCashFlowFromInvestingActivities
+    End If
+
+   'CF-Impute-20:
+    If NetCashFlowFromFinancingActivitiesContinuing = 0 and NetCashFlowFromFinancingActivitiesDiscontinued = 0 and NetCashFlowFromFinancingActivities <> 0 Then
+        NetCashFlowFromFinancingActivitiesContinuing = NetCashFlowFromFinancingActivities
+    End If
+
+    'CF-Impute-21:
+    If NetCashFlow = 0 and NetCashFlowContinuing <> 0 and NetCashFlowDiscontinued = 0 and NetCashFlowFromOperatingActivitiesDiscontinued = 0 and NetCashFlowFromInvestingActivitiesDiscontinued = 0 and NetCashFlowFromFinancingActivitiesDiscontinued = 0 and ExchangeGainsLosses = 0 Then
+        NetCashFlow = NetCashFlowContinuing
+    End If
+
+    'CF-Impute-22:
+    If NetCashFlow = 0 and (NetCashFlowFromOperatingActivities <> 0 or NetCashFlowFromInvestingActivities <> 0 or NetCashFlowFromFinancingActivities <> 0) Then
+        NetCashFlow = NetCashFlowFromOperatingActivities + NetCashFlowFromInvestingActivities + NetCashFlowFromFinancingActivities + ExchangeGainsLosses
+    End If
+
+    'CF-Impute-23: 
+    If NetCashFlow = 0 and NetCashFlowContinuing <> 0 and NetCashFlowDiscontinued <> 0 Then
+        NetCashFlow = NetCashFlowContinuing + NetCashFlowDiscontinued + ExchangeGainsLosses
+    End If
+
+
+
+
+
+
+
+'VERIFICATION RULES: Cash flow statement
+
+    CF1 = NetCashFlow - (NetCashFlowFromOperatingActivities + NetCashFlowFromInvestingActivities + NetCashFlowFromFinancingActivities + ExchangeGainsLosses)
+    
+    'CF2 = NetCashFlowContinuing - (NetCashFlowFromOperatingActivitiesContinuing + NetCashFlowFromInvestingActivitiesContinuing + NetCashFlowFromFinancingActivitiesContinuing)
+    CF2 = NetCashFlow - (NetCashFlowContinuing + NetCashFlowDiscontinued + ExchangeGainsLosses)
+
+    CF3 = NetCashFlowDiscontinued - (NetCashFlowFromOperatingActivitiesDiscontinued + NetCashFlowFromInvestingActivitiesDiscontinued + NetCashFlowFromFinancingActivitiesDiscontinued)
+    CF4 = NetCashFlowFromOperatingActivities - (NetCashFlowFromOperatingActivitiesContinuing + NetCashFlowFromOperatingActivitiesDiscontinued)
+    CF5 = NetCashFlowFromInvestingActivities - (NetCashFlowFromInvestingActivitiesContinuing + NetCashFlowFromInvestingActivitiesDiscontinued)
+    CF6 = NetCashFlowFromFinancingActivities - (NetCashFlowFromFinancingActivitiesContinuing + NetCashFlowFromFinancingActivitiesDiscontinued)
+    
+    
+
+
+'XXXXXXXXXXXXXXXXXXXXXXXX NETWORK: 411.1-Net Cash Flow Breakdown (http://www.xbrlsite.com/2018/Protototype/fac/ifrs/NetCashFlowBreakdown)
+'Empty
+'Reviewed 2015-11-13
+
+
+'XXXXXXXXXXXXXXXXXXXXXXXX NETWORK: 420.1-Continuing and Discontinued Net Cash Flow Breakdown (http://www.xbrlsite.com/2018/Protototype/fac/ifrs/ContinuingDiscontuedBreakdown)
+'Empty
+'Reviewed 2015-11-13
+
+
+'XXXXXXXXXXXXXXXXXXXXXXXX NETWORK: 501-Key Ratios (http://www.xbrlsite.com/2018/Protototype/fac/ifrs/KeyRatios)
+'Key ratios
+'Reviewed 2015-11-13
+
+
+    If (Assets <> 0) and (Equity <> 0) and (Revenues <> 0) Then
+        SustainableGrowthRate = ((NetIncomeLoss / Revenues) * (1+((Assets - Equity) / Equity))) / ((1 / (Revenues / Assets))-(((NetIncomeLoss / Revenues) * (1+(((Assets - Equity) / Equity))))))
+    End If
+
+    If Assets <> 0 Then
+        ReturnOnAssets = NetIncomeLoss / Assets
+    End If
+
+    If Equity <> 0 Then
+        ReturnOnEquity = NetIncomeLoss / Equity
+    End If
+
+    If Revenues <> 0 Then
+        ReturnOnSales = NetIncomeLoss / Revenues
+    End If
+
+
+
+'XXXXXXXXXXXXXXXXXXXXXXXX NETWORK: 601.2-Validation Results (http://www.xbrlsite.com/2018/Protototype/fac/ifrs/ValidationResults2)
+'Empty
+'Reviewed 2015-11-13
+
+
+'END OF FILE

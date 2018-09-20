@@ -1,0 +1,444 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!-- Report Frame Concept Map: IFRS-BSC-ISFUNC6-SCI1-CF1 -->
+<!-- Created by Charles Hoffman, CPA 8/2/2018 4:11:39 PM -->
+<link:linkbase xmlns='http://www.xbrl.org/2003/linkbase' xmlns:xbrldt='http://xbrl.org/2005/xbrldt' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:link='http://www.xbrl.org/2003/linkbase' xsi:schemaLocation='http://www.xbrl.org/2003/linkbase http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd'>
+   <link:arcroleRef xlink:type='simple' xlink:href='../fro-arcroles.xsd#class-equivalentClass' arcroleURI='http://www.xbrlsite.com/2014/Protototype/fro/arcrole/class-equivalentClass'/>
+   <link:definitionLink xlink:type='extended' xlink:role='http://www.xbrl.org/2003/role/link' xlink:title=''>
+      <link:loc xlink:type='locator' xlink:href='../fac.xsd#fac_Assets' xlink:label='fac_Assets' />
+      <link:loc xlink:type='locator' xlink:href='http://xbrl.ifrs.org/taxonomy/2017-03-09/full_ifrs/full_ifrs-cor_2017-03-09.xsd#ifrs-full_Assets' xlink:label='ifrs-full_Assets' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='http://www.xbrlsite.com/2014/Protototype/fro/arcrole/class-equivalentClass' xlink:from='fac_Assets' xlink:to='ifrs-full_Assets' order='1' use='optional' />
+   </link:definitionLink>
+
+   <link:definitionLink xlink:type='extended' xlink:role='http://www.xbrl.org/2003/role/link' xlink:title=''>
+      <link:loc xlink:type='locator' xlink:href='../fac.xsd#fac_AssetsHeldForSale' xlink:label='fac_AssetsHeldForSale' />
+      <link:loc xlink:type='locator' xlink:href='http://xbrl.ifrs.org/taxonomy/2017-03-09/full_ifrs/full_ifrs-cor_2017-03-09.xsd#ifrs-full_NoncurrentAssetsOrDisposalGroupsClassifiedAsHeldForSale' xlink:label='ifrs-full_NoncurrentAssetsOrDisposalGroupsClassifiedAsHeldForSale' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='http://www.xbrlsite.com/2014/Protototype/fro/arcrole/class-equivalentClass' xlink:from='fac_AssetsHeldForSale' xlink:to='ifrs-full_NoncurrentAssetsOrDisposalGroupsClassifiedAsHeldForSale' order='2' use='optional' />
+   </link:definitionLink>
+
+   <link:definitionLink xlink:type='extended' xlink:role='http://www.xbrl.org/2003/role/link' xlink:title=''>
+      <link:loc xlink:type='locator' xlink:href='../fac.xsd#fac_AssetsHeldForSale' xlink:label='fac_AssetsHeldForSale' />
+      <link:loc xlink:type='locator' xlink:href='http://xbrl.ifrs.org/taxonomy/2017-03-09/full_ifrs/full_ifrs-cor_2017-03-09.xsd#ifrs-full_NoncurrentAssetsOrDisposalGroupsClassifiedAsHeldForSaleOrAsHeldForDistributionToOwners' xlink:label='ifrs-full_NoncurrentAssetsOrDisposalGroupsClassifiedAsHeldForSaleOrAsHeldForDistributionToOwners' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='http://www.xbrlsite.com/2014/Protototype/fro/arcrole/class-equivalentClass' xlink:from='fac_AssetsHeldForSale' xlink:to='ifrs-full_NoncurrentAssetsOrDisposalGroupsClassifiedAsHeldForSaleOrAsHeldForDistributionToOwners' order='3' use='optional' />
+   </link:definitionLink>
+
+   <link:definitionLink xlink:type='extended' xlink:role='http://www.xbrl.org/2003/role/link' xlink:title=''>
+      <link:loc xlink:type='locator' xlink:href='../fac.xsd#fac_BalanceSheetDate' xlink:label='fac_BalanceSheetDate' />
+      <link:loc xlink:type='locator' xlink:href='https://xbrl.sec.gov/dei/2018/dei-2018-01-31.xsd#dei_DocumentPeriodEndDate' xlink:label='dei_DocumentPeriodEndDate' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='http://www.xbrlsite.com/2014/Protototype/fro/arcrole/class-equivalentClass' xlink:from='fac_BalanceSheetDate' xlink:to='dei_DocumentPeriodEndDate' order='4' use='optional' />
+   </link:definitionLink>
+
+   <link:definitionLink xlink:type='extended' xlink:role='http://www.xbrl.org/2003/role/link' xlink:title=''>
+      <link:loc xlink:type='locator' xlink:href='../fac.xsd#fac_ComprehensiveIncomeLoss' xlink:label='fac_ComprehensiveIncomeLoss' />
+      <link:loc xlink:type='locator' xlink:href='http://xbrl.ifrs.org/taxonomy/2017-03-09/full_ifrs/full_ifrs-cor_2017-03-09.xsd#ifrs-full_ComprehensiveIncome' xlink:label='ifrs-full_ComprehensiveIncome' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='http://www.xbrlsite.com/2014/Protototype/fro/arcrole/class-equivalentClass' xlink:from='fac_ComprehensiveIncomeLoss' xlink:to='ifrs-full_ComprehensiveIncome' order='5' use='optional' />
+   </link:definitionLink>
+
+   <link:definitionLink xlink:type='extended' xlink:role='http://www.xbrl.org/2003/role/link' xlink:title=''>
+      <link:loc xlink:type='locator' xlink:href='../fac.xsd#fac_ComprehensiveIncomeLossAttributableToNoncontrollingInterest' xlink:label='fac_ComprehensiveIncomeLossAttributableToNoncontrollingInterest' />
+      <link:loc xlink:type='locator' xlink:href='http://xbrl.ifrs.org/taxonomy/2017-03-09/full_ifrs/full_ifrs-cor_2017-03-09.xsd#ifrs-full_ComprehensiveIncomeAttributableToNoncontrollingInterests' xlink:label='ifrs-full_ComprehensiveIncomeAttributableToNoncontrollingInterests' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='http://www.xbrlsite.com/2014/Protototype/fro/arcrole/class-equivalentClass' xlink:from='fac_ComprehensiveIncomeLossAttributableToNoncontrollingInterest' xlink:to='ifrs-full_ComprehensiveIncomeAttributableToNoncontrollingInterests' order='6' use='optional' />
+   </link:definitionLink>
+
+   <link:definitionLink xlink:type='extended' xlink:role='http://www.xbrl.org/2003/role/link' xlink:title=''>
+      <link:loc xlink:type='locator' xlink:href='../fac.xsd#fac_ComprehensiveIncomeLossAttributableToParent' xlink:label='fac_ComprehensiveIncomeLossAttributableToParent' />
+      <link:loc xlink:type='locator' xlink:href='http://xbrl.ifrs.org/taxonomy/2017-03-09/full_ifrs/full_ifrs-cor_2017-03-09.xsd#ifrs-full_ComprehensiveIncomeAttributableToOwnersOfParent' xlink:label='ifrs-full_ComprehensiveIncomeAttributableToOwnersOfParent' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='http://www.xbrlsite.com/2014/Protototype/fro/arcrole/class-equivalentClass' xlink:from='fac_ComprehensiveIncomeLossAttributableToParent' xlink:to='ifrs-full_ComprehensiveIncomeAttributableToOwnersOfParent' order='7' use='optional' />
+   </link:definitionLink>
+
+   <link:definitionLink xlink:type='extended' xlink:role='http://www.xbrl.org/2003/role/link' xlink:title=''>
+      <link:loc xlink:type='locator' xlink:href='../fac.xsd#fac_CostOfRevenue' xlink:label='fac_CostOfRevenue' />
+      <link:loc xlink:type='locator' xlink:href='http://xbrl.ifrs.org/taxonomy/2017-03-09/full_ifrs/full_ifrs-cor_2017-03-09.xsd#ifrs-full_CostOfSales' xlink:label='ifrs-full_CostOfSales' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='http://www.xbrlsite.com/2014/Protototype/fro/arcrole/class-equivalentClass' xlink:from='fac_CostOfRevenue' xlink:to='ifrs-full_CostOfSales' order='8' use='optional' />
+   </link:definitionLink>
+
+   <link:definitionLink xlink:type='extended' xlink:role='http://www.xbrl.org/2003/role/link' xlink:title='ADDED: 2018-08-01'>
+      <link:loc xlink:type='locator' xlink:href='../fac.xsd#fac_CostOfRevenue' xlink:label='fac_CostOfRevenue' />
+      <link:loc xlink:type='locator' xlink:href='http://xbrl.ifrs.org/taxonomy/2017-03-09/full_ifrs/full_ifrs-cor_2017-03-09.xsd#ifrs-full_DirectOperatingExpenseFromInvestmentProperty' xlink:label='ifrs-full_DirectOperatingExpenseFromInvestmentProperty' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='http://www.xbrlsite.com/2014/Protototype/fro/arcrole/class-equivalentClass' xlink:from='fac_CostOfRevenue' xlink:to='ifrs-full_DirectOperatingExpenseFromInvestmentProperty' order='9' use='optional' />
+   </link:definitionLink>
+
+   <link:definitionLink xlink:type='extended' xlink:role='http://www.xbrl.org/2003/role/link' xlink:title=''>
+      <link:loc xlink:type='locator' xlink:href='../fac.xsd#fac_CostsAndExpenses' xlink:label='fac_CostsAndExpenses' />
+      <link:loc xlink:type='locator' xlink:href='http://xbrl.ifrs.org/taxonomy/2017-03-09/full_ifrs/full_ifrs-cor_2017-03-09.xsd#ifrs-full_OperatingExpense' xlink:label='ifrs-full_OperatingExpense' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='http://www.xbrlsite.com/2014/Protototype/fro/arcrole/class-equivalentClass' xlink:from='fac_CostsAndExpenses' xlink:to='ifrs-full_OperatingExpense' order='10' use='optional' />
+   </link:definitionLink>
+
+   <link:definitionLink xlink:type='extended' xlink:role='http://www.xbrl.org/2003/role/link' xlink:title=''>
+      <link:loc xlink:type='locator' xlink:href='../fac.xsd#fac_CurrentAssets' xlink:label='fac_CurrentAssets' />
+      <link:loc xlink:type='locator' xlink:href='http://xbrl.ifrs.org/taxonomy/2017-03-09/full_ifrs/full_ifrs-cor_2017-03-09.xsd#ifrs-full_CurrentAssets' xlink:label='ifrs-full_CurrentAssets' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='http://www.xbrlsite.com/2014/Protototype/fro/arcrole/class-equivalentClass' xlink:from='fac_CurrentAssets' xlink:to='ifrs-full_CurrentAssets' order='11' use='optional' />
+   </link:definitionLink>
+
+   <link:definitionLink xlink:type='extended' xlink:role='http://www.xbrl.org/2003/role/link' xlink:title=''>
+      <link:loc xlink:type='locator' xlink:href='../fac.xsd#fac_CurrentAssetsExcludingHeldForSale' xlink:label='fac_CurrentAssetsExcludingHeldForSale' />
+      <link:loc xlink:type='locator' xlink:href='http://xbrl.ifrs.org/taxonomy/2017-03-09/full_ifrs/full_ifrs-cor_2017-03-09.xsd#ifrs-full_CurrentAssetsOtherThanAssetsOrDisposalGroupsClassifiedAsHeldForSaleOrAsHeldForDistributionToOwners' xlink:label='ifrs-full_CurrentAssetsOtherThanAssetsOrDisposalGroupsClassifiedAsHeldForSaleOrAsHeldForDistributionToOwners' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='http://www.xbrlsite.com/2014/Protototype/fro/arcrole/class-equivalentClass' xlink:from='fac_CurrentAssetsExcludingHeldForSale' xlink:to='ifrs-full_CurrentAssetsOtherThanAssetsOrDisposalGroupsClassifiedAsHeldForSaleOrAsHeldForDistributionToOwners' order='12' use='optional' />
+   </link:definitionLink>
+
+   <link:definitionLink xlink:type='extended' xlink:role='http://www.xbrl.org/2003/role/link' xlink:title=''>
+      <link:loc xlink:type='locator' xlink:href='../fac.xsd#fac_CurrentLiabilities' xlink:label='fac_CurrentLiabilities' />
+      <link:loc xlink:type='locator' xlink:href='http://xbrl.ifrs.org/taxonomy/2017-03-09/full_ifrs/full_ifrs-cor_2017-03-09.xsd#ifrs-full_CurrentLiabilities' xlink:label='ifrs-full_CurrentLiabilities' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='http://www.xbrlsite.com/2014/Protototype/fro/arcrole/class-equivalentClass' xlink:from='fac_CurrentLiabilities' xlink:to='ifrs-full_CurrentLiabilities' order='13' use='optional' />
+   </link:definitionLink>
+
+   <link:definitionLink xlink:type='extended' xlink:role='http://www.xbrl.org/2003/role/link' xlink:title=''>
+      <link:loc xlink:type='locator' xlink:href='../fac.xsd#fac_CurrentLiabilitiesExcludingHeldForSale' xlink:label='fac_CurrentLiabilitiesExcludingHeldForSale' />
+      <link:loc xlink:type='locator' xlink:href='http://xbrl.ifrs.org/taxonomy/2017-03-09/full_ifrs/full_ifrs-cor_2017-03-09.xsd#ifrs-full_CurrentLiabilitiesOtherThanLiabilitiesIncludedInDisposalGroupsClassifiedAsHeldForSale' xlink:label='ifrs-full_CurrentLiabilitiesOtherThanLiabilitiesIncludedInDisposalGroupsClassifiedAsHeldForSale' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='http://www.xbrlsite.com/2014/Protototype/fro/arcrole/class-equivalentClass' xlink:from='fac_CurrentLiabilitiesExcludingHeldForSale' xlink:to='ifrs-full_CurrentLiabilitiesOtherThanLiabilitiesIncludedInDisposalGroupsClassifiedAsHeldForSale' order='14' use='optional' />
+   </link:definitionLink>
+
+   <link:definitionLink xlink:type='extended' xlink:role='http://www.xbrl.org/2003/role/link' xlink:title=''>
+      <link:loc xlink:type='locator' xlink:href='../fac.xsd#fac_DocumentType' xlink:label='fac_DocumentType' />
+      <link:loc xlink:type='locator' xlink:href='https://xbrl.sec.gov/dei/2018/dei-2018-01-31.xsd#dei_DocumentType' xlink:label='dei_DocumentType' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='http://www.xbrlsite.com/2014/Protototype/fro/arcrole/class-equivalentClass' xlink:from='fac_DocumentType' xlink:to='dei_DocumentType' order='15' use='optional' />
+   </link:definitionLink>
+
+   <link:definitionLink xlink:type='extended' xlink:role='http://www.xbrl.org/2003/role/link' xlink:title=''>
+      <link:loc xlink:type='locator' xlink:href='../fac.xsd#fac_EntityCentralIndexKey' xlink:label='fac_EntityCentralIndexKey' />
+      <link:loc xlink:type='locator' xlink:href='https://xbrl.sec.gov/dei/2018/dei-2018-01-31.xsd#dei_EntityCentralIndexKey' xlink:label='dei_EntityCentralIndexKey' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='http://www.xbrlsite.com/2014/Protototype/fro/arcrole/class-equivalentClass' xlink:from='fac_EntityCentralIndexKey' xlink:to='dei_EntityCentralIndexKey' order='16' use='optional' />
+   </link:definitionLink>
+
+   <link:definitionLink xlink:type='extended' xlink:role='http://www.xbrl.org/2003/role/link' xlink:title=''>
+      <link:loc xlink:type='locator' xlink:href='../fac.xsd#fac_EntityFilerCategory' xlink:label='fac_EntityFilerCategory' />
+      <link:loc xlink:type='locator' xlink:href='https://xbrl.sec.gov/dei/2018/dei-2018-01-31.xsd#dei_EntityFilerCategory' xlink:label='dei_EntityFilerCategory' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='http://www.xbrlsite.com/2014/Protototype/fro/arcrole/class-equivalentClass' xlink:from='fac_EntityFilerCategory' xlink:to='dei_EntityFilerCategory' order='17' use='optional' />
+   </link:definitionLink>
+
+   <link:definitionLink xlink:type='extended' xlink:role='http://www.xbrl.org/2003/role/link' xlink:title=''>
+      <link:loc xlink:type='locator' xlink:href='../fac.xsd#fac_EntityRegistrantName' xlink:label='fac_EntityRegistrantName' />
+      <link:loc xlink:type='locator' xlink:href='https://xbrl.sec.gov/dei/2018/dei-2018-01-31.xsd#dei_EntityRegistrantName' xlink:label='dei_EntityRegistrantName' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='http://www.xbrlsite.com/2014/Protototype/fro/arcrole/class-equivalentClass' xlink:from='fac_EntityRegistrantName' xlink:to='dei_EntityRegistrantName' order='18' use='optional' />
+   </link:definitionLink>
+
+   <link:definitionLink xlink:type='extended' xlink:role='http://www.xbrl.org/2003/role/link' xlink:title=''>
+      <link:loc xlink:type='locator' xlink:href='../fac.xsd#fac_Equity' xlink:label='fac_Equity' />
+      <link:loc xlink:type='locator' xlink:href='http://xbrl.ifrs.org/taxonomy/2017-03-09/full_ifrs/full_ifrs-cor_2017-03-09.xsd#ifrs-full_Equity' xlink:label='ifrs-full_Equity' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='http://www.xbrlsite.com/2014/Protototype/fro/arcrole/class-equivalentClass' xlink:from='fac_Equity' xlink:to='ifrs-full_Equity' order='19' use='optional' />
+   </link:definitionLink>
+
+   <link:definitionLink xlink:type='extended' xlink:role='http://www.xbrl.org/2003/role/link' xlink:title=''>
+      <link:loc xlink:type='locator' xlink:href='../fac.xsd#fac_EquityAttributableToNoncontrollingInterest' xlink:label='fac_EquityAttributableToNoncontrollingInterest' />
+      <link:loc xlink:type='locator' xlink:href='http://xbrl.ifrs.org/taxonomy/2017-03-09/full_ifrs/full_ifrs-cor_2017-03-09.xsd#ifrs-full_NoncontrollingInterests' xlink:label='ifrs-full_NoncontrollingInterests' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='http://www.xbrlsite.com/2014/Protototype/fro/arcrole/class-equivalentClass' xlink:from='fac_EquityAttributableToNoncontrollingInterest' xlink:to='ifrs-full_NoncontrollingInterests' order='20' use='optional' />
+   </link:definitionLink>
+
+   <link:definitionLink xlink:type='extended' xlink:role='http://www.xbrl.org/2003/role/link' xlink:title=''>
+      <link:loc xlink:type='locator' xlink:href='../fac.xsd#fac_EquityAttributableToParent' xlink:label='fac_EquityAttributableToParent' />
+      <link:loc xlink:type='locator' xlink:href='http://xbrl.ifrs.org/taxonomy/2017-03-09/full_ifrs/full_ifrs-cor_2017-03-09.xsd#ifrs-full_EquityAttributableToOwnersOfParent' xlink:label='ifrs-full_EquityAttributableToOwnersOfParent' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='http://www.xbrlsite.com/2014/Protototype/fro/arcrole/class-equivalentClass' xlink:from='fac_EquityAttributableToParent' xlink:to='ifrs-full_EquityAttributableToOwnersOfParent' order='21' use='optional' />
+   </link:definitionLink>
+
+   <link:definitionLink xlink:type='extended' xlink:role='http://www.xbrl.org/2003/role/link' xlink:title=''>
+      <link:loc xlink:type='locator' xlink:href='../fac.xsd#fac_ExchangeGainsLosses' xlink:label='fac_ExchangeGainsLosses' />
+      <link:loc xlink:type='locator' xlink:href='http://xbrl.ifrs.org/taxonomy/2017-03-09/full_ifrs/full_ifrs-cor_2017-03-09.xsd#ifrs-full_EffectOfExchangeRateChangesOnCashAndCashEquivalents' xlink:label='ifrs-full_EffectOfExchangeRateChangesOnCashAndCashEquivalents' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='http://www.xbrlsite.com/2014/Protototype/fro/arcrole/class-equivalentClass' xlink:from='fac_ExchangeGainsLosses' xlink:to='ifrs-full_EffectOfExchangeRateChangesOnCashAndCashEquivalents' order='22' use='optional' />
+   </link:definitionLink>
+
+   <link:definitionLink xlink:type='extended' xlink:role='http://www.xbrl.org/2003/role/link' xlink:title=''>
+      <link:loc xlink:type='locator' xlink:href='../fac.xsd#fac_FiscalPeriodFocus' xlink:label='fac_FiscalPeriodFocus' />
+      <link:loc xlink:type='locator' xlink:href='https://xbrl.sec.gov/dei/2018/dei-2018-01-31.xsd#dei_DocumentFiscalPeriodFocus' xlink:label='dei_DocumentFiscalPeriodFocus' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='http://www.xbrlsite.com/2014/Protototype/fro/arcrole/class-equivalentClass' xlink:from='fac_FiscalPeriodFocus' xlink:to='dei_DocumentFiscalPeriodFocus' order='23' use='optional' />
+   </link:definitionLink>
+
+   <link:definitionLink xlink:type='extended' xlink:role='http://www.xbrl.org/2003/role/link' xlink:title=''>
+      <link:loc xlink:type='locator' xlink:href='../fac.xsd#fac_FiscalYearEnd' xlink:label='fac_FiscalYearEnd' />
+      <link:loc xlink:type='locator' xlink:href='https://xbrl.sec.gov/dei/2018/dei-2018-01-31.xsd#dei_CurrentFiscalYearEndDate' xlink:label='dei_CurrentFiscalYearEndDate' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='http://www.xbrlsite.com/2014/Protototype/fro/arcrole/class-equivalentClass' xlink:from='fac_FiscalYearEnd' xlink:to='dei_CurrentFiscalYearEndDate' order='24' use='optional' />
+   </link:definitionLink>
+
+   <link:definitionLink xlink:type='extended' xlink:role='http://www.xbrl.org/2003/role/link' xlink:title=''>
+      <link:loc xlink:type='locator' xlink:href='../fac.xsd#fac_FiscalYearFocus' xlink:label='fac_FiscalYearFocus' />
+      <link:loc xlink:type='locator' xlink:href='https://xbrl.sec.gov/dei/2018/dei-2018-01-31.xsd#dei_DocumentFiscalYearFocus' xlink:label='dei_DocumentFiscalYearFocus' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='http://www.xbrlsite.com/2014/Protototype/fro/arcrole/class-equivalentClass' xlink:from='fac_FiscalYearFocus' xlink:to='dei_DocumentFiscalYearFocus' order='25' use='optional' />
+   </link:definitionLink>
+
+   <link:definitionLink xlink:type='extended' xlink:role='http://www.xbrl.org/2003/role/link' xlink:title=''>
+      <link:loc xlink:type='locator' xlink:href='../fac.xsd#fac_GrossProfit' xlink:label='fac_GrossProfit' />
+      <link:loc xlink:type='locator' xlink:href='http://xbrl.ifrs.org/taxonomy/2017-03-09/full_ifrs/full_ifrs-cor_2017-03-09.xsd#ifrs-full_GrossProfit' xlink:label='ifrs-full_GrossProfit' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='http://www.xbrlsite.com/2014/Protototype/fro/arcrole/class-equivalentClass' xlink:from='fac_GrossProfit' xlink:to='ifrs-full_GrossProfit' order='26' use='optional' />
+   </link:definitionLink>
+
+   <link:definitionLink xlink:type='extended' xlink:role='http://www.xbrl.org/2003/role/link' xlink:title='ADDED: 2018-08-01'>
+      <link:loc xlink:type='locator' xlink:href='../fac.xsd#fac_GrossProfit' xlink:label='fac_GrossProfit' />
+      <link:loc xlink:type='locator' xlink:href='http://xbrl.ifrs.org/taxonomy/2017-03-09/full_ifrs/full_ifrs-cor_2017-03-09.xsd#ifrs-full_RentalIncomeFromInvestmentPropertyNetOfDirectOperatingExpense' xlink:label='ifrs-full_RentalIncomeFromInvestmentPropertyNetOfDirectOperatingExpense' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='http://www.xbrlsite.com/2014/Protototype/fro/arcrole/class-equivalentClass' xlink:from='fac_GrossProfit' xlink:to='ifrs-full_RentalIncomeFromInvestmentPropertyNetOfDirectOperatingExpense' order='27' use='optional' />
+   </link:definitionLink>
+
+   <link:definitionLink xlink:type='extended' xlink:role='http://www.xbrl.org/2003/role/link' xlink:title=''>
+      <link:loc xlink:type='locator' xlink:href='../fac.xsd#fac_IncomeLossFromContinuingOperationsAfterTax' xlink:label='fac_IncomeLossFromContinuingOperationsAfterTax' />
+      <link:loc xlink:type='locator' xlink:href='http://xbrl.ifrs.org/taxonomy/2017-03-09/full_ifrs/full_ifrs-cor_2017-03-09.xsd#ifrs-full_ProfitLossFromContinuingOperations' xlink:label='ifrs-full_ProfitLossFromContinuingOperations' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='http://www.xbrlsite.com/2014/Protototype/fro/arcrole/class-equivalentClass' xlink:from='fac_IncomeLossFromContinuingOperationsAfterTax' xlink:to='ifrs-full_ProfitLossFromContinuingOperations' order='28' use='optional' />
+   </link:definitionLink>
+
+   <link:definitionLink xlink:type='extended' xlink:role='http://www.xbrl.org/2003/role/link' xlink:title=''>
+      <link:loc xlink:type='locator' xlink:href='../fac.xsd#fac_IncomeLossFromContinuingOperationsBeforeTax' xlink:label='fac_IncomeLossFromContinuingOperationsBeforeTax' />
+      <link:loc xlink:type='locator' xlink:href='http://xbrl.ifrs.org/taxonomy/2017-03-09/full_ifrs/full_ifrs-cor_2017-03-09.xsd#ifrs-full_ProfitLossBeforeTax' xlink:label='ifrs-full_ProfitLossBeforeTax' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='http://www.xbrlsite.com/2014/Protototype/fro/arcrole/class-equivalentClass' xlink:from='fac_IncomeLossFromContinuingOperationsBeforeTax' xlink:to='ifrs-full_ProfitLossBeforeTax' order='29' use='optional' />
+   </link:definitionLink>
+
+   <link:definitionLink xlink:type='extended' xlink:role='http://www.xbrl.org/2003/role/link' xlink:title=''>
+      <link:loc xlink:type='locator' xlink:href='../fac.xsd#fac_IncomeLossFromDiscontinuedOperationsNetOfTax' xlink:label='fac_IncomeLossFromDiscontinuedOperationsNetOfTax' />
+      <link:loc xlink:type='locator' xlink:href='http://xbrl.ifrs.org/taxonomy/2017-03-09/full_ifrs/full_ifrs-cor_2017-03-09.xsd#ifrs-full_ProfitLossFromDiscontinuedOperations' xlink:label='ifrs-full_ProfitLossFromDiscontinuedOperations' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='http://www.xbrlsite.com/2014/Protototype/fro/arcrole/class-equivalentClass' xlink:from='fac_IncomeLossFromDiscontinuedOperationsNetOfTax' xlink:to='ifrs-full_ProfitLossFromDiscontinuedOperations' order='30' use='optional' />
+   </link:definitionLink>
+
+   <link:definitionLink xlink:type='extended' xlink:role='http://www.xbrl.org/2003/role/link' xlink:title=''>
+      <link:loc xlink:type='locator' xlink:href='../fac.xsd#fac_IncomeLossFromDiscontinuedOperationsNetOfTax' xlink:label='fac_IncomeLossFromDiscontinuedOperationsNetOfTax' />
+      <link:loc xlink:type='locator' xlink:href='http://xbrl.ifrs.org/taxonomy/2017-03-09/full_ifrs/full_ifrs-cor_2017-03-09.xsd#ifrs-full_ProfitLossFromDiscontinuedOperationsAttributableToOrdinaryEquityHoldersOfParentEntity' xlink:label='ifrs-full_ProfitLossFromDiscontinuedOperationsAttributableToOrdinaryEquityHoldersOfParentEntity' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='http://www.xbrlsite.com/2014/Protototype/fro/arcrole/class-equivalentClass' xlink:from='fac_IncomeLossFromDiscontinuedOperationsNetOfTax' xlink:to='ifrs-full_ProfitLossFromDiscontinuedOperationsAttributableToOrdinaryEquityHoldersOfParentEntity' order='31' use='optional' />
+   </link:definitionLink>
+
+   <link:definitionLink xlink:type='extended' xlink:role='http://www.xbrl.org/2003/role/link' xlink:title=''>
+      <link:loc xlink:type='locator' xlink:href='../fac.xsd#fac_IncomeTaxExpenseBenefit' xlink:label='fac_IncomeTaxExpenseBenefit' />
+      <link:loc xlink:type='locator' xlink:href='http://xbrl.ifrs.org/taxonomy/2017-03-09/full_ifrs/full_ifrs-cor_2017-03-09.xsd#ifrs-full_IncomeTaxExpenseContinuingOperations' xlink:label='ifrs-full_IncomeTaxExpenseContinuingOperations' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='http://www.xbrlsite.com/2014/Protototype/fro/arcrole/class-equivalentClass' xlink:from='fac_IncomeTaxExpenseBenefit' xlink:to='ifrs-full_IncomeTaxExpenseContinuingOperations' order='32' use='optional' />
+   </link:definitionLink>
+
+   <link:definitionLink xlink:type='extended' xlink:role='http://www.xbrl.org/2003/role/link' xlink:title=''>
+      <link:loc xlink:type='locator' xlink:href='../fac.xsd#fac_Liabilities' xlink:label='fac_Liabilities' />
+      <link:loc xlink:type='locator' xlink:href='http://xbrl.ifrs.org/taxonomy/2017-03-09/full_ifrs/full_ifrs-cor_2017-03-09.xsd#ifrs-full_Liabilities' xlink:label='ifrs-full_Liabilities' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='http://www.xbrlsite.com/2014/Protototype/fro/arcrole/class-equivalentClass' xlink:from='fac_Liabilities' xlink:to='ifrs-full_Liabilities' order='33' use='optional' />
+   </link:definitionLink>
+
+   <link:definitionLink xlink:type='extended' xlink:role='http://www.xbrl.org/2003/role/link' xlink:title=''>
+      <link:loc xlink:type='locator' xlink:href='../fac.xsd#fac_LiabilitiesAndEquity' xlink:label='fac_LiabilitiesAndEquity' />
+      <link:loc xlink:type='locator' xlink:href='http://xbrl.ifrs.org/taxonomy/2017-03-09/full_ifrs/full_ifrs-cor_2017-03-09.xsd#ifrs-full_EquityAndLiabilities' xlink:label='ifrs-full_EquityAndLiabilities' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='http://www.xbrlsite.com/2014/Protototype/fro/arcrole/class-equivalentClass' xlink:from='fac_LiabilitiesAndEquity' xlink:to='ifrs-full_EquityAndLiabilities' order='34' use='optional' />
+   </link:definitionLink>
+
+   <link:definitionLink xlink:type='extended' xlink:role='http://www.xbrl.org/2003/role/link' xlink:title=''>
+      <link:loc xlink:type='locator' xlink:href='../fac.xsd#fac_LiabilitiesHeldForSale' xlink:label='fac_LiabilitiesHeldForSale' />
+      <link:loc xlink:type='locator' xlink:href='http://xbrl.ifrs.org/taxonomy/2017-03-09/full_ifrs/full_ifrs-cor_2017-03-09.xsd#ifrs-full_LiabilitiesIncludedInDisposalGroupsClassifiedAsHeldForSale' xlink:label='ifrs-full_LiabilitiesIncludedInDisposalGroupsClassifiedAsHeldForSale' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='http://www.xbrlsite.com/2014/Protototype/fro/arcrole/class-equivalentClass' xlink:from='fac_LiabilitiesHeldForSale' xlink:to='ifrs-full_LiabilitiesIncludedInDisposalGroupsClassifiedAsHeldForSale' order='35' use='optional' />
+   </link:definitionLink>
+
+   <link:definitionLink xlink:type='extended' xlink:role='http://www.xbrl.org/2003/role/link' xlink:title=''>
+      <link:loc xlink:type='locator' xlink:href='../fac.xsd#fac_NetAssetsLiabilities' xlink:label='fac_NetAssetsLiabilities' />
+      <link:loc xlink:type='locator' xlink:href='http://xbrl.ifrs.org/taxonomy/2017-03-09/full_ifrs/full_ifrs-cor_2017-03-09.xsd#ifrs-full_NetAssetsLiabilities' xlink:label='ifrs-full_NetAssetsLiabilities' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='http://www.xbrlsite.com/2014/Protototype/fro/arcrole/class-equivalentClass' xlink:from='fac_NetAssetsLiabilities' xlink:to='ifrs-full_NetAssetsLiabilities' order='36' use='optional' />
+   </link:definitionLink>
+
+   <link:definitionLink xlink:type='extended' xlink:role='http://www.xbrl.org/2003/role/link' xlink:title=''>
+      <link:loc xlink:type='locator' xlink:href='../fac.xsd#fac_NetCashFlow' xlink:label='fac_NetCashFlow' />
+      <link:loc xlink:type='locator' xlink:href='http://xbrl.ifrs.org/taxonomy/2017-03-09/full_ifrs/full_ifrs-cor_2017-03-09.xsd#ifrs-full_IncreaseDecreaseInCashAndCashEquivalents' xlink:label='ifrs-full_IncreaseDecreaseInCashAndCashEquivalents' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='http://www.xbrlsite.com/2014/Protototype/fro/arcrole/class-equivalentClass' xlink:from='fac_NetCashFlow' xlink:to='ifrs-full_IncreaseDecreaseInCashAndCashEquivalents' order='37' use='optional' />
+   </link:definitionLink>
+
+   <link:definitionLink xlink:type='extended' xlink:role='http://www.xbrl.org/2003/role/link' xlink:title=''>
+      <link:loc xlink:type='locator' xlink:href='../fac.xsd#fac_NetCashFlow' xlink:label='fac_NetCashFlow' />
+      <link:loc xlink:type='locator' xlink:href='http://xbrl.ifrs.org/taxonomy/2017-03-09/full_ifrs/full_ifrs-cor_2017-03-09.xsd#ifrs-full_IncreaseDecreaseInCashAndCashEquivalentsBeforeEffectOfExchangeRateChanges' xlink:label='ifrs-full_IncreaseDecreaseInCashAndCashEquivalentsBeforeEffectOfExchangeRateChanges' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='http://www.xbrlsite.com/2014/Protototype/fro/arcrole/class-equivalentClass' xlink:from='fac_NetCashFlow' xlink:to='ifrs-full_IncreaseDecreaseInCashAndCashEquivalentsBeforeEffectOfExchangeRateChanges' order='38' use='optional' />
+   </link:definitionLink>
+
+   <link:definitionLink xlink:type='extended' xlink:role='http://www.xbrl.org/2003/role/link' xlink:title=''>
+      <link:loc xlink:type='locator' xlink:href='../fac.xsd#fac_NetCashFlowDiscontinued' xlink:label='fac_NetCashFlowDiscontinued' />
+      <link:loc xlink:type='locator' xlink:href='http://xbrl.ifrs.org/taxonomy/2017-03-09/full_ifrs/full_ifrs-cor_2017-03-09.xsd#ifrs-full_IncreaseDecreaseInCashAndCashEquivalentsDiscontinuedOperations' xlink:label='ifrs-full_IncreaseDecreaseInCashAndCashEquivalentsDiscontinuedOperations' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='http://www.xbrlsite.com/2014/Protototype/fro/arcrole/class-equivalentClass' xlink:from='fac_NetCashFlowDiscontinued' xlink:to='ifrs-full_IncreaseDecreaseInCashAndCashEquivalentsDiscontinuedOperations' order='39' use='optional' />
+   </link:definitionLink>
+
+   <link:definitionLink xlink:type='extended' xlink:role='http://www.xbrl.org/2003/role/link' xlink:title=''>
+      <link:loc xlink:type='locator' xlink:href='../fac.xsd#fac_NetCashFlowFromFinancingActivities' xlink:label='fac_NetCashFlowFromFinancingActivities' />
+      <link:loc xlink:type='locator' xlink:href='http://xbrl.ifrs.org/taxonomy/2017-03-09/full_ifrs/full_ifrs-cor_2017-03-09.xsd#ifrs-full_CashFlowsFromUsedInFinancingActivities' xlink:label='ifrs-full_CashFlowsFromUsedInFinancingActivities' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='http://www.xbrlsite.com/2014/Protototype/fro/arcrole/class-equivalentClass' xlink:from='fac_NetCashFlowFromFinancingActivities' xlink:to='ifrs-full_CashFlowsFromUsedInFinancingActivities' order='40' use='optional' />
+   </link:definitionLink>
+
+   <link:definitionLink xlink:type='extended' xlink:role='http://www.xbrl.org/2003/role/link' xlink:title=''>
+      <link:loc xlink:type='locator' xlink:href='../fac.xsd#fac_NetCashFlowFromFinancingActivitiesContinuing' xlink:label='fac_NetCashFlowFromFinancingActivitiesContinuing' />
+      <link:loc xlink:type='locator' xlink:href='http://xbrl.ifrs.org/taxonomy/2017-03-09/full_ifrs/full_ifrs-cor_2017-03-09.xsd#ifrs-full_CashFlowsFromUsedInFinancingActivitiesContinuingOperations' xlink:label='ifrs-full_CashFlowsFromUsedInFinancingActivitiesContinuingOperations' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='http://www.xbrlsite.com/2014/Protototype/fro/arcrole/class-equivalentClass' xlink:from='fac_NetCashFlowFromFinancingActivitiesContinuing' xlink:to='ifrs-full_CashFlowsFromUsedInFinancingActivitiesContinuingOperations' order='41' use='optional' />
+   </link:definitionLink>
+
+   <link:definitionLink xlink:type='extended' xlink:role='http://www.xbrl.org/2003/role/link' xlink:title=''>
+      <link:loc xlink:type='locator' xlink:href='../fac.xsd#fac_NetCashFlowFromFinancingActivitiesDiscontinued' xlink:label='fac_NetCashFlowFromFinancingActivitiesDiscontinued' />
+      <link:loc xlink:type='locator' xlink:href='http://xbrl.ifrs.org/taxonomy/2017-03-09/full_ifrs/full_ifrs-cor_2017-03-09.xsd#ifrs-full_CashFlowsFromUsedInFinancingActivitiesDiscontinuedOperations' xlink:label='ifrs-full_CashFlowsFromUsedInFinancingActivitiesDiscontinuedOperations' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='http://www.xbrlsite.com/2014/Protototype/fro/arcrole/class-equivalentClass' xlink:from='fac_NetCashFlowFromFinancingActivitiesDiscontinued' xlink:to='ifrs-full_CashFlowsFromUsedInFinancingActivitiesDiscontinuedOperations' order='42' use='optional' />
+   </link:definitionLink>
+
+   <link:definitionLink xlink:type='extended' xlink:role='http://www.xbrl.org/2003/role/link' xlink:title=''>
+      <link:loc xlink:type='locator' xlink:href='../fac.xsd#fac_NetCashFlowFromInvestingActivities' xlink:label='fac_NetCashFlowFromInvestingActivities' />
+      <link:loc xlink:type='locator' xlink:href='http://xbrl.ifrs.org/taxonomy/2017-03-09/full_ifrs/full_ifrs-cor_2017-03-09.xsd#ifrs-full_CashFlowsFromUsedInInvestingActivities' xlink:label='ifrs-full_CashFlowsFromUsedInInvestingActivities' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='http://www.xbrlsite.com/2014/Protototype/fro/arcrole/class-equivalentClass' xlink:from='fac_NetCashFlowFromInvestingActivities' xlink:to='ifrs-full_CashFlowsFromUsedInInvestingActivities' order='43' use='optional' />
+   </link:definitionLink>
+
+   <link:definitionLink xlink:type='extended' xlink:role='http://www.xbrl.org/2003/role/link' xlink:title=''>
+      <link:loc xlink:type='locator' xlink:href='../fac.xsd#fac_NetCashFlowFromInvestingActivitiesContinuing' xlink:label='fac_NetCashFlowFromInvestingActivitiesContinuing' />
+      <link:loc xlink:type='locator' xlink:href='http://xbrl.ifrs.org/taxonomy/2017-03-09/full_ifrs/full_ifrs-cor_2017-03-09.xsd#ifrs-full_CashFlowsFromUsedInInvestingActivitiesContinuingOperations' xlink:label='ifrs-full_CashFlowsFromUsedInInvestingActivitiesContinuingOperations' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='http://www.xbrlsite.com/2014/Protototype/fro/arcrole/class-equivalentClass' xlink:from='fac_NetCashFlowFromInvestingActivitiesContinuing' xlink:to='ifrs-full_CashFlowsFromUsedInInvestingActivitiesContinuingOperations' order='44' use='optional' />
+   </link:definitionLink>
+
+   <link:definitionLink xlink:type='extended' xlink:role='http://www.xbrl.org/2003/role/link' xlink:title=''>
+      <link:loc xlink:type='locator' xlink:href='../fac.xsd#fac_NetCashFlowFromInvestingActivitiesDiscontinued' xlink:label='fac_NetCashFlowFromInvestingActivitiesDiscontinued' />
+      <link:loc xlink:type='locator' xlink:href='http://xbrl.ifrs.org/taxonomy/2017-03-09/full_ifrs/full_ifrs-cor_2017-03-09.xsd#ifrs-full_CashFlowsFromUsedInInvestingActivitiesDiscontinuedOperations' xlink:label='ifrs-full_CashFlowsFromUsedInInvestingActivitiesDiscontinuedOperations' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='http://www.xbrlsite.com/2014/Protototype/fro/arcrole/class-equivalentClass' xlink:from='fac_NetCashFlowFromInvestingActivitiesDiscontinued' xlink:to='ifrs-full_CashFlowsFromUsedInInvestingActivitiesDiscontinuedOperations' order='45' use='optional' />
+   </link:definitionLink>
+
+   <link:definitionLink xlink:type='extended' xlink:role='http://www.xbrl.org/2003/role/link' xlink:title=''>
+      <link:loc xlink:type='locator' xlink:href='../fac.xsd#fac_NetCashFlowFromOperatingActivities' xlink:label='fac_NetCashFlowFromOperatingActivities' />
+      <link:loc xlink:type='locator' xlink:href='http://xbrl.ifrs.org/taxonomy/2017-03-09/full_ifrs/full_ifrs-cor_2017-03-09.xsd#ifrs-full_CashFlowsFromUsedInOperatingActivities' xlink:label='ifrs-full_CashFlowsFromUsedInOperatingActivities' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='http://www.xbrlsite.com/2014/Protototype/fro/arcrole/class-equivalentClass' xlink:from='fac_NetCashFlowFromOperatingActivities' xlink:to='ifrs-full_CashFlowsFromUsedInOperatingActivities' order='46' use='optional' />
+   </link:definitionLink>
+
+   <link:definitionLink xlink:type='extended' xlink:role='http://www.xbrl.org/2003/role/link' xlink:title=''>
+      <link:loc xlink:type='locator' xlink:href='../fac.xsd#fac_NetCashFlowFromOperatingActivitiesContinuing' xlink:label='fac_NetCashFlowFromOperatingActivitiesContinuing' />
+      <link:loc xlink:type='locator' xlink:href='http://xbrl.ifrs.org/taxonomy/2017-03-09/full_ifrs/full_ifrs-cor_2017-03-09.xsd#ifrs-full_CashFlowsFromUsedInOperatingActivitiesContinuingOperations' xlink:label='ifrs-full_CashFlowsFromUsedInOperatingActivitiesContinuingOperations' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='http://www.xbrlsite.com/2014/Protototype/fro/arcrole/class-equivalentClass' xlink:from='fac_NetCashFlowFromOperatingActivitiesContinuing' xlink:to='ifrs-full_CashFlowsFromUsedInOperatingActivitiesContinuingOperations' order='47' use='optional' />
+   </link:definitionLink>
+
+   <link:definitionLink xlink:type='extended' xlink:role='http://www.xbrl.org/2003/role/link' xlink:title=''>
+      <link:loc xlink:type='locator' xlink:href='../fac.xsd#fac_NetCashFlowFromOperatingActivitiesDiscontinued' xlink:label='fac_NetCashFlowFromOperatingActivitiesDiscontinued' />
+      <link:loc xlink:type='locator' xlink:href='http://xbrl.ifrs.org/taxonomy/2017-03-09/full_ifrs/full_ifrs-cor_2017-03-09.xsd#ifrs-full_CashFlowsFromUsedInOperatingActivitiesDiscontinuedOperations' xlink:label='ifrs-full_CashFlowsFromUsedInOperatingActivitiesDiscontinuedOperations' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='http://www.xbrlsite.com/2014/Protototype/fro/arcrole/class-equivalentClass' xlink:from='fac_NetCashFlowFromOperatingActivitiesDiscontinued' xlink:to='ifrs-full_CashFlowsFromUsedInOperatingActivitiesDiscontinuedOperations' order='48' use='optional' />
+   </link:definitionLink>
+
+   <link:definitionLink xlink:type='extended' xlink:role='http://www.xbrl.org/2003/role/link' xlink:title=''>
+      <link:loc xlink:type='locator' xlink:href='../fac.xsd#fac_NetIncomeLoss' xlink:label='fac_NetIncomeLoss' />
+      <link:loc xlink:type='locator' xlink:href='http://xbrl.ifrs.org/taxonomy/2017-03-09/full_ifrs/full_ifrs-cor_2017-03-09.xsd#ifrs-full_ProfitLoss' xlink:label='ifrs-full_ProfitLoss' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='http://www.xbrlsite.com/2014/Protototype/fro/arcrole/class-equivalentClass' xlink:from='fac_NetIncomeLoss' xlink:to='ifrs-full_ProfitLoss' order='49' use='optional' />
+   </link:definitionLink>
+
+   <link:definitionLink xlink:type='extended' xlink:role='http://www.xbrl.org/2003/role/link' xlink:title=''>
+      <link:loc xlink:type='locator' xlink:href='../fac.xsd#fac_NetIncomeLossAttributableToNoncontrollingInterest' xlink:label='fac_NetIncomeLossAttributableToNoncontrollingInterest' />
+      <link:loc xlink:type='locator' xlink:href='http://xbrl.ifrs.org/taxonomy/2017-03-09/full_ifrs/full_ifrs-cor_2017-03-09.xsd#ifrs-full_ProfitLossAttributableToNoncontrollingInterests' xlink:label='ifrs-full_ProfitLossAttributableToNoncontrollingInterests' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='http://www.xbrlsite.com/2014/Protototype/fro/arcrole/class-equivalentClass' xlink:from='fac_NetIncomeLossAttributableToNoncontrollingInterest' xlink:to='ifrs-full_ProfitLossAttributableToNoncontrollingInterests' order='50' use='optional' />
+   </link:definitionLink>
+
+   <link:definitionLink xlink:type='extended' xlink:role='http://www.xbrl.org/2003/role/link' xlink:title=''>
+      <link:loc xlink:type='locator' xlink:href='../fac.xsd#fac_NetIncomeLossAttributableToParent' xlink:label='fac_NetIncomeLossAttributableToParent' />
+      <link:loc xlink:type='locator' xlink:href='http://xbrl.ifrs.org/taxonomy/2017-03-09/full_ifrs/full_ifrs-cor_2017-03-09.xsd#ifrs-full_ProfitLossAttributableToOwnersOfParent' xlink:label='ifrs-full_ProfitLossAttributableToOwnersOfParent' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='http://www.xbrlsite.com/2014/Protototype/fro/arcrole/class-equivalentClass' xlink:from='fac_NetIncomeLossAttributableToParent' xlink:to='ifrs-full_ProfitLossAttributableToOwnersOfParent' order='51' use='optional' />
+   </link:definitionLink>
+
+   <link:definitionLink xlink:type='extended' xlink:role='http://www.xbrl.org/2003/role/link' xlink:title=''>
+      <link:loc xlink:type='locator' xlink:href='../fac.xsd#fac_NoncurrentAssets' xlink:label='fac_NoncurrentAssets' />
+      <link:loc xlink:type='locator' xlink:href='http://xbrl.ifrs.org/taxonomy/2017-03-09/full_ifrs/full_ifrs-cor_2017-03-09.xsd#ifrs-full_NoncurrentAssets' xlink:label='ifrs-full_NoncurrentAssets' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='http://www.xbrlsite.com/2014/Protototype/fro/arcrole/class-equivalentClass' xlink:from='fac_NoncurrentAssets' xlink:to='ifrs-full_NoncurrentAssets' order='52' use='optional' />
+   </link:definitionLink>
+
+   <link:definitionLink xlink:type='extended' xlink:role='http://www.xbrl.org/2003/role/link' xlink:title=''>
+      <link:loc xlink:type='locator' xlink:href='../fac.xsd#fac_NoncurrentLiabilities' xlink:label='fac_NoncurrentLiabilities' />
+      <link:loc xlink:type='locator' xlink:href='http://xbrl.ifrs.org/taxonomy/2017-03-09/full_ifrs/full_ifrs-cor_2017-03-09.xsd#ifrs-full_NoncurrentLiabilities' xlink:label='ifrs-full_NoncurrentLiabilities' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='http://www.xbrlsite.com/2014/Protototype/fro/arcrole/class-equivalentClass' xlink:from='fac_NoncurrentLiabilities' xlink:to='ifrs-full_NoncurrentLiabilities' order='53' use='optional' />
+   </link:definitionLink>
+
+   <link:definitionLink xlink:type='extended' xlink:role='http://www.xbrl.org/2003/role/link' xlink:title='Added: 2018-07-23'>
+      <link:loc xlink:type='locator' xlink:href='../fac.xsd#fac_OperatingAndNonoperatingCostsAndExpenses' xlink:label='fac_OperatingAndNonoperatingCostsAndExpenses' />
+      <link:loc xlink:type='locator' xlink:href='http://xbrl.ifrs.org/taxonomy/2017-03-09/full_ifrs/full_ifrs-cor_2017-03-09.xsd#ifrs-full_ExpenseByNature' xlink:label='ifrs-full_ExpenseByNature' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='http://www.xbrlsite.com/2014/Protototype/fro/arcrole/class-equivalentClass' xlink:from='fac_OperatingAndNonoperatingCostsAndExpenses' xlink:to='ifrs-full_ExpenseByNature' order='54' use='optional' />
+   </link:definitionLink>
+
+   <link:definitionLink xlink:type='extended' xlink:role='http://www.xbrl.org/2003/role/link' xlink:title='Added: 2018-07-23'>
+      <link:loc xlink:type='locator' xlink:href='../fac.xsd#fac_OperatingAndNonoperatingRevenues' xlink:label='fac_OperatingAndNonoperatingRevenues' />
+      <link:loc xlink:type='locator' xlink:href='http://xbrl.ifrs.org/taxonomy/2017-03-09/full_ifrs/full_ifrs-cor_2017-03-09.xsd#ifrs-full_RevenueAndOperatingIncome' xlink:label='ifrs-full_RevenueAndOperatingIncome' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='http://www.xbrlsite.com/2014/Protototype/fro/arcrole/class-equivalentClass' xlink:from='fac_OperatingAndNonoperatingRevenues' xlink:to='ifrs-full_RevenueAndOperatingIncome' order='55' use='optional' />
+   </link:definitionLink>
+
+   <link:definitionLink xlink:type='extended' xlink:role='http://www.xbrl.org/2003/role/link' xlink:title='Added: 2018-07-23'>
+      <link:loc xlink:type='locator' xlink:href='../fac.xsd#fac_OperatingAndNonoperatingRevenues' xlink:label='fac_OperatingAndNonoperatingRevenues' />
+      <link:loc xlink:type='locator' xlink:href='http://xbrl.ifrs.org/taxonomy/2017-03-09/full_ifrs/full_ifrs-cor_2017-03-09.xsd#ifrs-full_Revenue' xlink:label='ifrs-full_Revenue' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='http://www.xbrlsite.com/2014/Protototype/fro/arcrole/class-equivalentClass' xlink:from='fac_OperatingAndNonoperatingRevenues' xlink:to='ifrs-full_Revenue' order='56' use='optional' />
+   </link:definitionLink>
+
+   <link:definitionLink xlink:type='extended' xlink:role='http://www.xbrl.org/2003/role/link' xlink:title='Added: 2018-07-23'>
+      <link:loc xlink:type='locator' xlink:href='../fac.xsd#fac_OperatingAndNonoperatingRevenues' xlink:label='fac_OperatingAndNonoperatingRevenues' />
+      <link:loc xlink:type='locator' xlink:href='http://xbrl.ifrs.org/taxonomy/2017-03-09/full_ifrs/full_ifrs-cor_2017-03-09.xsd#ifrs-full_RevenueFromSaleOfOilAndGasProducts' xlink:label='ifrs-full_RevenueFromSaleOfOilAndGasProducts' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='http://www.xbrlsite.com/2014/Protototype/fro/arcrole/class-equivalentClass' xlink:from='fac_OperatingAndNonoperatingRevenues' xlink:to='ifrs-full_RevenueFromSaleOfOilAndGasProducts' order='57' use='optional' />
+   </link:definitionLink>
+
+   <link:definitionLink xlink:type='extended' xlink:role='http://www.xbrl.org/2003/role/link' xlink:title=''>
+      <link:loc xlink:type='locator' xlink:href='../fac.xsd#fac_OperatingExpenses' xlink:label='fac_OperatingExpenses' />
+      <link:loc xlink:type='locator' xlink:href='http://xbrl.ifrs.org/taxonomy/2017-03-09/full_ifrs/full_ifrs-cor_2017-03-09.xsd#ifrs-full_OperatingExpenseExcludingCostOfSales' xlink:label='ifrs-full_OperatingExpenseExcludingCostOfSales' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='http://www.xbrlsite.com/2014/Protototype/fro/arcrole/class-equivalentClass' xlink:from='fac_OperatingExpenses' xlink:to='ifrs-full_OperatingExpenseExcludingCostOfSales' order='58' use='optional' />
+   </link:definitionLink>
+
+   <link:definitionLink xlink:type='extended' xlink:role='http://www.xbrl.org/2003/role/link' xlink:title=''>
+      <link:loc xlink:type='locator' xlink:href='../fac.xsd#fac_OperatingIncomeLoss' xlink:label='fac_OperatingIncomeLoss' />
+      <link:loc xlink:type='locator' xlink:href='http://xbrl.ifrs.org/taxonomy/2017-03-09/full_ifrs/full_ifrs-cor_2017-03-09.xsd#ifrs-full_ProfitLossFromOperatingActivities' xlink:label='ifrs-full_ProfitLossFromOperatingActivities' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='http://www.xbrlsite.com/2014/Protototype/fro/arcrole/class-equivalentClass' xlink:from='fac_OperatingIncomeLoss' xlink:to='ifrs-full_ProfitLossFromOperatingActivities' order='59' use='optional' />
+   </link:definitionLink>
+
+   <link:definitionLink xlink:type='extended' xlink:role='http://www.xbrl.org/2003/role/link' xlink:title=''>
+      <link:loc xlink:type='locator' xlink:href='../fac.xsd#fac_OtherComprehensiveIncomeLoss' xlink:label='fac_OtherComprehensiveIncomeLoss' />
+      <link:loc xlink:type='locator' xlink:href='http://xbrl.ifrs.org/taxonomy/2017-03-09/full_ifrs/full_ifrs-cor_2017-03-09.xsd#ifrs-full_OtherComprehensiveIncome' xlink:label='ifrs-full_OtherComprehensiveIncome' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='http://www.xbrlsite.com/2014/Protototype/fro/arcrole/class-equivalentClass' xlink:from='fac_OtherComprehensiveIncomeLoss' xlink:to='ifrs-full_OtherComprehensiveIncome' order='60' use='optional' />
+   </link:definitionLink>
+
+   <link:definitionLink xlink:type='extended' xlink:role='http://www.xbrl.org/2003/role/link' xlink:title=''>
+      <link:loc xlink:type='locator' xlink:href='../fac.xsd#fac_OtherOperatingIncomeExpenses' xlink:label='fac_OtherOperatingIncomeExpenses' />
+      <link:loc xlink:type='locator' xlink:href='http://xbrl.ifrs.org/taxonomy/2017-03-09/full_ifrs/full_ifrs-cor_2017-03-09.xsd#ifrs-full_OtherOperatingIncomeExpense' xlink:label='ifrs-full_OtherOperatingIncomeExpense' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='http://www.xbrlsite.com/2014/Protototype/fro/arcrole/class-equivalentClass' xlink:from='fac_OtherOperatingIncomeExpenses' xlink:to='ifrs-full_OtherOperatingIncomeExpense' order='61' use='optional' />
+   </link:definitionLink>
+
+   <link:definitionLink xlink:type='extended' xlink:role='http://www.xbrl.org/2003/role/link' xlink:title=''>
+      <link:loc xlink:type='locator' xlink:href='../fac.xsd#fac_Revenues' xlink:label='fac_Revenues' />
+      <link:loc xlink:type='locator' xlink:href='http://xbrl.ifrs.org/taxonomy/2017-03-09/full_ifrs/full_ifrs-cor_2017-03-09.xsd#ifrs-full_RevenueAndOperatingIncome' xlink:label='ifrs-full_RevenueAndOperatingIncome' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='http://www.xbrlsite.com/2014/Protototype/fro/arcrole/class-equivalentClass' xlink:from='fac_Revenues' xlink:to='ifrs-full_RevenueAndOperatingIncome' order='62' use='optional' />
+   </link:definitionLink>
+
+   <link:definitionLink xlink:type='extended' xlink:role='http://www.xbrl.org/2003/role/link' xlink:title=''>
+      <link:loc xlink:type='locator' xlink:href='../fac.xsd#fac_Revenues' xlink:label='fac_Revenues' />
+      <link:loc xlink:type='locator' xlink:href='http://xbrl.ifrs.org/taxonomy/2017-03-09/full_ifrs/full_ifrs-cor_2017-03-09.xsd#ifrs-full_Revenue' xlink:label='ifrs-full_Revenue' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='http://www.xbrlsite.com/2014/Protototype/fro/arcrole/class-equivalentClass' xlink:from='fac_Revenues' xlink:to='ifrs-full_Revenue' order='63' use='optional' />
+   </link:definitionLink>
+
+   <link:definitionLink xlink:type='extended' xlink:role='http://www.xbrl.org/2003/role/link' xlink:title=''>
+      <link:loc xlink:type='locator' xlink:href='../fac.xsd#fac_Revenues' xlink:label='fac_Revenues' />
+      <link:loc xlink:type='locator' xlink:href='http://xbrl.ifrs.org/taxonomy/2017-03-09/full_ifrs/full_ifrs-cor_2017-03-09.xsd#ifrs-full_RevenueFromRenderingOfServices' xlink:label='ifrs-full_RevenueFromRenderingOfServices' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='http://www.xbrlsite.com/2014/Protototype/fro/arcrole/class-equivalentClass' xlink:from='fac_Revenues' xlink:to='ifrs-full_RevenueFromRenderingOfServices' order='64' use='optional' />
+   </link:definitionLink>
+
+   <link:definitionLink xlink:type='extended' xlink:role='http://www.xbrl.org/2003/role/link' xlink:title=''>
+      <link:loc xlink:type='locator' xlink:href='../fac.xsd#fac_Revenues' xlink:label='fac_Revenues' />
+      <link:loc xlink:type='locator' xlink:href='http://xbrl.ifrs.org/taxonomy/2017-03-09/full_ifrs/full_ifrs-cor_2017-03-09.xsd#ifrs-full_RevenueFromSaleOfGoods' xlink:label='ifrs-full_RevenueFromSaleOfGoods' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='http://www.xbrlsite.com/2014/Protototype/fro/arcrole/class-equivalentClass' xlink:from='fac_Revenues' xlink:to='ifrs-full_RevenueFromSaleOfGoods' order='65' use='optional' />
+   </link:definitionLink>
+
+   <link:definitionLink xlink:type='extended' xlink:role='http://www.xbrl.org/2003/role/link' xlink:title=''>
+      <link:loc xlink:type='locator' xlink:href='../fac.xsd#fac_Revenues' xlink:label='fac_Revenues' />
+      <link:loc xlink:type='locator' xlink:href='http://xbrl.ifrs.org/taxonomy/2017-03-09/full_ifrs/full_ifrs-cor_2017-03-09.xsd#ifrs-full_RevenueFromRenderingOfTelecommunicationServices' xlink:label='ifrs-full_RevenueFromRenderingOfTelecommunicationServices' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='http://www.xbrlsite.com/2014/Protototype/fro/arcrole/class-equivalentClass' xlink:from='fac_Revenues' xlink:to='ifrs-full_RevenueFromRenderingOfTelecommunicationServices' order='66' use='optional' />
+   </link:definitionLink>
+
+   <link:definitionLink xlink:type='extended' xlink:role='http://www.xbrl.org/2003/role/link' xlink:title='Added: 2018-07-23'>
+      <link:loc xlink:type='locator' xlink:href='../fac.xsd#fac_Revenues' xlink:label='fac_Revenues' />
+      <link:loc xlink:type='locator' xlink:href='http://xbrl.ifrs.org/taxonomy/2017-03-09/full_ifrs/full_ifrs-cor_2017-03-09.xsd#ifrs-full_RevenueFromRenderingOfTransportServices' xlink:label='ifrs-full_RevenueFromRenderingOfTransportServices' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='http://www.xbrlsite.com/2014/Protototype/fro/arcrole/class-equivalentClass' xlink:from='fac_Revenues' xlink:to='ifrs-full_RevenueFromRenderingOfTransportServices' order='67' use='optional' />
+   </link:definitionLink>
+
+   <link:definitionLink xlink:type='extended' xlink:role='http://www.xbrl.org/2003/role/link' xlink:title='Added: 2018-07-12'>
+      <link:loc xlink:type='locator' xlink:href='../fac.xsd#fac_Revenues' xlink:label='fac_Revenues' />
+      <link:loc xlink:type='locator' xlink:href='http://xbrl.ifrs.org/taxonomy/2017-03-09/full_ifrs/full_ifrs-cor_2017-03-09.xsd#ifrs-full_RevenueFromSaleOfGold' xlink:label='ifrs-full_RevenueFromSaleOfGold' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='http://www.xbrlsite.com/2014/Protototype/fro/arcrole/class-equivalentClass' xlink:from='fac_Revenues' xlink:to='ifrs-full_RevenueFromSaleOfGold' order='68' use='optional' />
+   </link:definitionLink>
+
+   <link:definitionLink xlink:type='extended' xlink:role='http://www.xbrl.org/2003/role/link' xlink:title='Added: 2018-07-23'>
+      <link:loc xlink:type='locator' xlink:href='../fac.xsd#fac_Revenues' xlink:label='fac_Revenues' />
+      <link:loc xlink:type='locator' xlink:href='http://xbrl.ifrs.org/taxonomy/2017-03-09/full_ifrs/full_ifrs-cor_2017-03-09.xsd#ifrs-full_RevenueFromSaleOfOilAndGasProducts' xlink:label='ifrs-full_RevenueFromSaleOfOilAndGasProducts' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='http://www.xbrlsite.com/2014/Protototype/fro/arcrole/class-equivalentClass' xlink:from='fac_Revenues' xlink:to='ifrs-full_RevenueFromSaleOfOilAndGasProducts' order='69' use='optional' />
+   </link:definitionLink>
+
+   <link:definitionLink xlink:type='extended' xlink:role='http://www.xbrl.org/2003/role/link' xlink:title='Added: 2018-07-23'>
+      <link:loc xlink:type='locator' xlink:href='../fac.xsd#fac_Revenues' xlink:label='fac_Revenues' />
+      <link:loc xlink:type='locator' xlink:href='http://xbrl.ifrs.org/taxonomy/2017-03-09/full_ifrs/full_ifrs-cor_2017-03-09.xsd#ifrs-full_RevenueFromRenderingOfCargoAndMailTransportServices' xlink:label='ifrs-full_RevenueFromRenderingOfCargoAndMailTransportServices' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='http://www.xbrlsite.com/2014/Protototype/fro/arcrole/class-equivalentClass' xlink:from='fac_Revenues' xlink:to='ifrs-full_RevenueFromRenderingOfCargoAndMailTransportServices' order='70' use='optional' />
+   </link:definitionLink>
+
+   <link:definitionLink xlink:type='extended' xlink:role='http://www.xbrl.org/2003/role/link' xlink:title='Added: 2018-08-01'>
+      <link:loc xlink:type='locator' xlink:href='../fac.xsd#fac_Revenues' xlink:label='fac_Revenues' />
+      <link:loc xlink:type='locator' xlink:href='http://xbrl.ifrs.org/taxonomy/2017-03-09/full_ifrs/full_ifrs-cor_2017-03-09.xsd#ifrs-full_RevenueFromRoyalties' xlink:label='ifrs-full_RevenueFromRoyalties' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='http://www.xbrlsite.com/2014/Protototype/fro/arcrole/class-equivalentClass' xlink:from='fac_Revenues' xlink:to='ifrs-full_RevenueFromRoyalties' order='71' use='optional' />
+   </link:definitionLink>
+
+   <link:definitionLink xlink:type='extended' xlink:role='http://www.xbrl.org/2003/role/link' xlink:title='Added: 2018-08-01'>
+      <link:loc xlink:type='locator' xlink:href='../fac.xsd#fac_Revenues' xlink:label='fac_Revenues' />
+      <link:loc xlink:type='locator' xlink:href='http://xbrl.ifrs.org/taxonomy/2017-03-09/full_ifrs/full_ifrs-cor_2017-03-09.xsd#ifrs-full_RentalIncomeFromInvestmentProperty' xlink:label='ifrs-full_RentalIncomeFromInvestmentProperty' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='http://www.xbrlsite.com/2014/Protototype/fro/arcrole/class-equivalentClass' xlink:from='fac_Revenues' xlink:to='ifrs-full_RentalIncomeFromInvestmentProperty' order='72' use='optional' />
+   </link:definitionLink>
+
+   <link:definitionLink xlink:type='extended' xlink:role='http://www.xbrl.org/2003/role/link' xlink:title=''>
+      <link:loc xlink:type='locator' xlink:href='../fac.xsd#fac_TradingSymbol' xlink:label='fac_TradingSymbol' />
+      <link:loc xlink:type='locator' xlink:href='https://xbrl.sec.gov/dei/2018/dei-2018-01-31.xsd#dei_TradingSymbol' xlink:label='dei_TradingSymbol' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='http://www.xbrlsite.com/2014/Protototype/fro/arcrole/class-equivalentClass' xlink:from='fac_TradingSymbol' xlink:to='dei_TradingSymbol' order='73' use='optional' />
+   </link:definitionLink>
+
+</link:linkbase>

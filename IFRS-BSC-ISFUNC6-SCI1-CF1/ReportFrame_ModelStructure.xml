@@ -1,0 +1,800 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Component>
+   <Network identifier="http://www.xbrl.org/2003/role/link"
+            label="http://www.xbrl.org/2003/role/link"/>
+   <Network identifier="http://www.xbrlsite.com/2018/Protototype/fac/ifrs/BalanceSheetClassified"
+            label="http://www.xbrlsite.com/2018/Protototype/fac/ifrs/BalanceSheetClassified">
+      <Table name="fac:BalanceSheetClassifiedTable"
+             label="Balance Sheet, Classified [Table]"
+             prefix="fac">
+         <LineItems name="fac:BalanceSheetLineItems" label="Balance Sheet [Line Items]"
+                    prefix="fac">
+            <Concept name="fac:AssetsRollUp" label="Assets [Roll Up]" prefix="fac"
+                     dataType="xbrli:stringItemType"
+                     baseDataType="xbrli:stringItemType"
+                     abstract="true"
+                     periodType="duration">
+               <Concept name="fac:CurrentAssets" label="Current Assets" prefix="fac"
+                        dataType="xbrli:monetaryItemType"
+                        baseDataType="xbrli:monetaryItemType"
+                        abstract="false"
+                        balance="debit"
+                        periodType="instant"/>
+               <Concept name="fac:NoncurrentAssets" label="Noncurrent Assets" prefix="fac"
+                        dataType="xbrli:monetaryItemType"
+                        baseDataType="xbrli:monetaryItemType"
+                        abstract="false"
+                        balance="debit"
+                        periodType="instant"/>
+               <Concept name="fac:Assets" label="Assets" prefix="fac" dataType="xbrli:monetaryItemType"
+                        baseDataType="xbrli:monetaryItemType"
+                        abstract="false"
+                        balance="debit"
+                        periodType="instant"/>
+            </Concept>
+            <Concept name="fac:LiabilitiesEquityRollUp" label="Liabilities and Equity [Roll Up]"
+                     prefix="fac"
+                     dataType="xbrli:stringItemType"
+                     baseDataType="xbrli:stringItemType"
+                     abstract="true"
+                     periodType="duration">
+               <Concept name="fac:LiabilitiesRollUp" label="Liabilities [Roll Up]" prefix="fac"
+                        dataType="xbrli:stringItemType"
+                        baseDataType="xbrli:stringItemType"
+                        abstract="true"
+                        periodType="duration">
+                  <Concept name="fac:CurrentLiabilities" label="Current Liabilities" prefix="fac"
+                           dataType="xbrli:monetaryItemType"
+                           baseDataType="xbrli:monetaryItemType"
+                           abstract="false"
+                           balance="credit"
+                           periodType="instant"/>
+                  <Concept name="fac:NoncurrentLiabilities" label="Noncurrent Liabilities" prefix="fac"
+                           dataType="xbrli:monetaryItemType"
+                           baseDataType="xbrli:monetaryItemType"
+                           abstract="false"
+                           balance="credit"
+                           periodType="instant"/>
+                  <Concept name="fac:Liabilities" label="Liabilities" prefix="fac"
+                           dataType="xbrli:monetaryItemType"
+                           baseDataType="xbrli:monetaryItemType"
+                           abstract="false"
+                           balance="credit"
+                           periodType="instant"/>
+               </Concept>
+               <Concept name="fac:EquityRollUp" label="Equity [Roll Up]" prefix="fac"
+                        dataType="xbrli:stringItemType"
+                        baseDataType="xbrli:stringItemType"
+                        abstract="true"
+                        periodType="duration">
+                  <Concept name="fac:EquityAttributableToParent" label="Equity Attributable to Parent"
+                           prefix="fac"
+                           dataType="xbrli:monetaryItemType"
+                           baseDataType="xbrli:monetaryItemType"
+                           abstract="false"
+                           balance="credit"
+                           periodType="instant"/>
+                  <Concept name="fac:EquityAttributableToNoncontrollingInterest"
+                           label="Equity Attributable to Noncontrolling Interest"
+                           prefix="fac"
+                           dataType="xbrli:monetaryItemType"
+                           baseDataType="xbrli:monetaryItemType"
+                           abstract="false"
+                           balance="credit"
+                           periodType="instant"/>
+                  <Concept name="fac:Equity" label="Equity" prefix="fac" dataType="xbrli:monetaryItemType"
+                           baseDataType="xbrli:monetaryItemType"
+                           abstract="false"
+                           balance="credit"
+                           periodType="instant"/>
+               </Concept>
+               <Concept name="fac:LiabilitiesAndEquity" label="Liabilities and Equity" prefix="fac"
+                        dataType="xbrli:monetaryItemType"
+                        baseDataType="xbrli:monetaryItemType"
+                        abstract="false"
+                        balance="credit"
+                        periodType="instant"/>
+            </Concept>
+         </LineItems>
+      </Table>
+   </Network>
+   <Network identifier="http://www.xbrlsite.com/2018/Protototype/fac/ifrs/CashFlowStatement"
+            label="http://www.xbrlsite.com/2018/Protototype/fac/ifrs/CashFlowStatement">
+      <Table name="fac:CashFlowStatementTable" label="Cash Flow Statement [Table]"
+             prefix="fac">
+         <LineItems name="fac:CashFlowStatementLineItems" label="Cash Flow Statement [Line Items]"
+                    prefix="fac">
+            <Concept name="fac:NetCashFlowRollUp" label="Net Cash Flow [Roll Up]" prefix="fac"
+                     dataType="xbrli:stringItemType"
+                     baseDataType="xbrli:stringItemType"
+                     abstract="true"
+                     periodType="duration">
+               <Concept name="fac:NetCashFlowFromOperatingActivitiesRollUp"
+                        label="Net Cash Flow from Operating Activities [Roll Up]"
+                        prefix="fac"
+                        dataType="xbrli:stringItemType"
+                        baseDataType="xbrli:stringItemType"
+                        abstract="true"
+                        periodType="duration">
+                  <Concept name="fac:NetCashFlowFromOperatingActivitiesContinuing"
+                           label="Net Cash Flow from Operating Activities, Continuing"
+                           prefix="fac"
+                           dataType="xbrli:monetaryItemType"
+                           baseDataType="xbrli:monetaryItemType"
+                           abstract="false"
+                           balance="debit"
+                           periodType="duration"/>
+                  <Concept name="fac:NetCashFlowFromOperatingActivitiesDiscontinued"
+                           label="Net Cash Flow from Operating Activities, Discontinued"
+                           prefix="fac"
+                           dataType="xbrli:monetaryItemType"
+                           baseDataType="xbrli:monetaryItemType"
+                           abstract="false"
+                           balance="debit"
+                           periodType="duration"/>
+                  <Concept name="fac:NetCashFlowFromOperatingActivities"
+                           label="Net Cash Flow from Operating Activities"
+                           prefix="fac"
+                           dataType="xbrli:monetaryItemType"
+                           baseDataType="xbrli:monetaryItemType"
+                           abstract="false"
+                           balance="debit"
+                           periodType="duration"/>
+               </Concept>
+               <Concept name="fac:NetCashFlowFromInvestingActivitiesRollUp"
+                        label="Net Cash Flow from Investing Activities [Roll Up]"
+                        prefix="fac"
+                        dataType="xbrli:stringItemType"
+                        baseDataType="xbrli:stringItemType"
+                        abstract="true"
+                        periodType="duration">
+                  <Concept name="fac:NetCashFlowFromInvestingActivitiesContinuing"
+                           label="Net Cash Flow from Investing Activities, Continuing"
+                           prefix="fac"
+                           dataType="xbrli:monetaryItemType"
+                           baseDataType="xbrli:monetaryItemType"
+                           abstract="false"
+                           balance="debit"
+                           periodType="duration"/>
+                  <Concept name="fac:NetCashFlowFromInvestingActivitiesDiscontinued"
+                           label="Net Cash Flow from Investing Activities, Discontinued"
+                           prefix="fac"
+                           dataType="xbrli:monetaryItemType"
+                           baseDataType="xbrli:monetaryItemType"
+                           abstract="false"
+                           balance="debit"
+                           periodType="duration"/>
+                  <Concept name="fac:NetCashFlowFromInvestingActivities"
+                           label="Net Cash Flow from Investing Activities"
+                           prefix="fac"
+                           dataType="xbrli:monetaryItemType"
+                           baseDataType="xbrli:monetaryItemType"
+                           abstract="false"
+                           balance="debit"
+                           periodType="duration"/>
+               </Concept>
+               <Concept name="fac:NetCashFlowFromFinancingActivitiesRollUp"
+                        label="Net Cash Flow from Financing Activities [Roll Up]"
+                        prefix="fac"
+                        dataType="xbrli:stringItemType"
+                        baseDataType="xbrli:stringItemType"
+                        abstract="true"
+                        periodType="duration">
+                  <Concept name="fac:NetCashFlowFromFinancingActivitiesContinuing"
+                           label="Net Cash Flow from Financing Activities, Continuing"
+                           prefix="fac"
+                           dataType="xbrli:monetaryItemType"
+                           baseDataType="xbrli:monetaryItemType"
+                           abstract="false"
+                           balance="debit"
+                           periodType="duration"/>
+                  <Concept name="fac:NetCashFlowFromFinancingActivitiesDiscontinued"
+                           label="Net Cash Flow from Financing Activities, Discontinued"
+                           prefix="fac"
+                           dataType="xbrli:monetaryItemType"
+                           baseDataType="xbrli:monetaryItemType"
+                           abstract="false"
+                           balance="debit"
+                           periodType="duration"/>
+                  <Concept name="fac:NetCashFlowFromFinancingActivities"
+                           label="Net Cash Flow from Financing Activities"
+                           prefix="fac"
+                           dataType="xbrli:monetaryItemType"
+                           baseDataType="xbrli:monetaryItemType"
+                           abstract="false"
+                           balance="debit"
+                           periodType="duration"/>
+               </Concept>
+               <Concept name="fac:ExchangeGainsLosses" label="Exchange Gains (Losses)" prefix="fac"
+                        dataType="xbrli:monetaryItemType"
+                        baseDataType="xbrli:monetaryItemType"
+                        abstract="false"
+                        balance="debit"
+                        periodType="duration"/>
+               <Concept name="fac:NetCashFlow" label="Net Cash Flow" prefix="fac"
+                        dataType="xbrli:monetaryItemType"
+                        baseDataType="xbrli:monetaryItemType"
+                        abstract="false"
+                        balance="debit"
+                        periodType="duration"/>
+            </Concept>
+         </LineItems>
+      </Table>
+   </Network>
+   <Network identifier="http://www.xbrlsite.com/2018/Protototype/fac/ifrs/ComprehensiveIncomeBreakdown"
+            label="http://www.xbrlsite.com/2018/Protototype/fac/ifrs/ComprehensiveIncomeBreakdown">
+      <Table name="fac:ComprehensiveIncomeLossBreakdownTable"
+             label="Comprehensive Income (Loss) Breakdown [Table]"
+             prefix="fac">
+         <LineItems name="fac:ComprehensiveIncomeLossBreakdownLineItems"
+                    label="Comprehensive Income (Loss) Breakdown [Line Items]"
+                    prefix="fac">
+            <Concept name="fac:ComprehensiveIncomeLossRollUp"
+                     label="Comprehensive Income (Loss) [Roll Up]"
+                     prefix="fac"
+                     dataType="xbrli:stringItemType"
+                     baseDataType="xbrli:stringItemType"
+                     abstract="true"
+                     periodType="duration">
+               <Concept name="fac:ComprehensiveIncomeLossAttributableToParent"
+                        label="Comprehensive Income (Loss) Attributable to Parent"
+                        prefix="fac"
+                        dataType="xbrli:monetaryItemType"
+                        baseDataType="xbrli:monetaryItemType"
+                        abstract="false"
+                        balance="credit"
+                        periodType="duration"/>
+               <Concept name="fac:ComprehensiveIncomeLossAttributableToNoncontrollingInterest"
+                        label="Comprehensive Income (Loss) Attributable to Noncontrolling Interest"
+                        prefix="fac"
+                        dataType="xbrli:monetaryItemType"
+                        baseDataType="xbrli:monetaryItemType"
+                        abstract="false"
+                        balance="credit"
+                        periodType="duration"/>
+               <Concept name="fac:ComprehensiveIncomeLoss" label="Comprehensive Income (Loss)"
+                        prefix="fac"
+                        dataType="xbrli:monetaryItemType"
+                        baseDataType="xbrli:monetaryItemType"
+                        abstract="false"
+                        balance="credit"
+                        periodType="duration"/>
+            </Concept>
+            <Concept name="fac:ValidationResultsHierarchy" label="Validation Results [Hierarchy]"
+                     prefix="fac"
+                     dataType="xbrli:stringItemType"
+                     baseDataType="xbrli:stringItemType"
+                     abstract="true"
+                     periodType="duration">
+               <Concept name="fac:IS9" label="IS9" prefix="fac"/>
+            </Concept>
+         </LineItems>
+      </Table>
+   </Network>
+   <Network identifier="http://www.xbrlsite.com/2018/Protototype/fac/ifrs/ContinuingDiscontuedBreakdown"
+            label="http://www.xbrlsite.com/2018/Protototype/fac/ifrs/ContinuingDiscontuedBreakdown">
+      <Table name="fac:CashFlowStatementTable" label="Cash Flow Statement [Table]"
+             prefix="fac">
+         <LineItems name="fac:CashFlowStatementLineItems" label="Cash Flow Statement [Line Items]"
+                    prefix="fac">
+            <Concept name="fac:NetCashFlowContinuingRollUp"
+                     label="Net Cash Flow, Continuing [Roll Up]"
+                     prefix="fac"
+                     dataType="xbrli:stringItemType"
+                     baseDataType="xbrli:stringItemType"
+                     abstract="true"
+                     periodType="duration">
+               <Concept name="fac:NetCashFlowFromOperatingActivitiesContinuing"
+                        label="Net Cash Flow from Operating Activities, Continuing"
+                        prefix="fac"
+                        dataType="xbrli:monetaryItemType"
+                        baseDataType="xbrli:monetaryItemType"
+                        abstract="false"
+                        balance="debit"
+                        periodType="duration"/>
+               <Concept name="fac:NetCashFlowFromInvestingActivitiesContinuing"
+                        label="Net Cash Flow from Investing Activities, Continuing"
+                        prefix="fac"
+                        dataType="xbrli:monetaryItemType"
+                        baseDataType="xbrli:monetaryItemType"
+                        abstract="false"
+                        balance="debit"
+                        periodType="duration"/>
+               <Concept name="fac:NetCashFlowFromFinancingActivitiesContinuing"
+                        label="Net Cash Flow from Financing Activities, Continuing"
+                        prefix="fac"
+                        dataType="xbrli:monetaryItemType"
+                        baseDataType="xbrli:monetaryItemType"
+                        abstract="false"
+                        balance="debit"
+                        periodType="duration"/>
+               <Concept name="fac:NetCashFlowContinuing" label="Net Cash Flow, Continuing" prefix="fac"
+                        dataType="xbrli:monetaryItemType"
+                        baseDataType="xbrli:monetaryItemType"
+                        abstract="false"
+                        balance="debit"
+                        periodType="duration"/>
+            </Concept>
+            <Concept name="fac:NetCashFlowDiscontinuedRollUp"
+                     label="Net Cash Flow, Discontinued [Roll Up]"
+                     prefix="fac"
+                     dataType="xbrli:stringItemType"
+                     baseDataType="xbrli:stringItemType"
+                     abstract="true"
+                     periodType="duration">
+               <Concept name="fac:NetCashFlowFromOperatingActivitiesDiscontinued"
+                        label="Net Cash Flow from Operating Activities, Discontinued"
+                        prefix="fac"
+                        dataType="xbrli:monetaryItemType"
+                        baseDataType="xbrli:monetaryItemType"
+                        abstract="false"
+                        balance="debit"
+                        periodType="duration"/>
+               <Concept name="fac:NetCashFlowFromInvestingActivitiesDiscontinued"
+                        label="Net Cash Flow from Investing Activities, Discontinued"
+                        prefix="fac"
+                        dataType="xbrli:monetaryItemType"
+                        baseDataType="xbrli:monetaryItemType"
+                        abstract="false"
+                        balance="debit"
+                        periodType="duration"/>
+               <Concept name="fac:NetCashFlowFromFinancingActivitiesDiscontinued"
+                        label="Net Cash Flow from Financing Activities, Discontinued"
+                        prefix="fac"
+                        dataType="xbrli:monetaryItemType"
+                        baseDataType="xbrli:monetaryItemType"
+                        abstract="false"
+                        balance="debit"
+                        periodType="duration"/>
+               <Concept name="fac:NetCashFlowDiscontinued" label="Net Cash Flow, Discontinued"
+                        prefix="fac"
+                        dataType="xbrli:monetaryItemType"
+                        baseDataType="xbrli:monetaryItemType"
+                        abstract="false"
+                        balance="debit"
+                        periodType="duration"/>
+            </Concept>
+            <Concept name="fac:ValidationResultsHierarchy" label="Validation Results [Hierarchy]"
+                     prefix="fac"
+                     dataType="xbrli:stringItemType"
+                     baseDataType="xbrli:stringItemType"
+                     abstract="true"
+                     periodType="duration">
+               <Concept name="fac:CF3" label="CF3" prefix="fac"/>
+            </Concept>
+         </LineItems>
+      </Table>
+   </Network>
+   <Network identifier="http://www.xbrlsite.com/2018/Protototype/fac/ifrs/GeneralInformation"
+            label="http://www.xbrlsite.com/2018/Protototype/fac/ifrs/GeneralInformation">
+      <Table name="fac:GeneralInformationTable" label="General Information [Table]"
+             prefix="fac">
+         <LineItems name="fac:GeneralInformationLineItems" label="General Information [Line Items]"
+                    prefix="fac">
+            <Concept name="fac:GeneralInformationHierarchy" label="General Information [Hierarchy]"
+                     prefix="fac"
+                     dataType="xbrli:stringItemType"
+                     baseDataType="xbrli:stringItemType"
+                     abstract="true"
+                     periodType="duration">
+               <Concept name="fac:EntityRegistrantName" label="Entity Registrant Name" prefix="fac"
+                        dataType="xbrli:normalizedStringItemType"
+                        baseDataType="xbrli:normalizedStringItemType"
+                        abstract="false"
+                        periodType="duration"/>
+               <Concept name="fac:EntityCentralIndexKey" label="Entity Central Index Key" prefix="fac"
+                        dataType="xbrli:tokenItemType"
+                        baseDataType="xbrli:tokenItemType"
+                        abstract="false"
+                        periodType="duration"/>
+               <Concept name="fac:EntityFilerCategory" label="Entity Filer Category" prefix="fac"
+                        dataType="xbrli:stringItemType"
+                        baseDataType="xbrli:stringItemType"
+                        abstract="false"
+                        periodType="duration"/>
+               <Concept name="fac:TradingSymbol" label="Trading Symbol" prefix="fac"
+                        dataType="xbrli:normalizedStringItemType"
+                        baseDataType="xbrli:normalizedStringItemType"
+                        abstract="false"
+                        periodType="duration"/>
+               <Concept name="fac:FiscalYearEnd" label="Fiscal Year End" prefix="fac"
+                        dataType="xbrli:stringItemType"
+                        baseDataType="xbrli:stringItemType"
+                        abstract="false"
+                        periodType="duration"/>
+               <Concept name="fac:FiscalYearFocus" label="Fiscal Year Focus" prefix="fac"
+                        dataType="xbrli:stringItemType"
+                        baseDataType="xbrli:stringItemType"
+                        abstract="false"
+                        periodType="duration"/>
+               <Concept name="fac:FiscalPeriodFocus" label="Fiscal Period Focus" prefix="fac"
+                        dataType="xbrli:stringItemType"
+                        baseDataType="xbrli:stringItemType"
+                        abstract="false"
+                        periodType="duration"/>
+               <Concept name="fac:DocumentType" label="Document Type" prefix="fac"
+                        dataType="xbrli:stringItemType"
+                        baseDataType="xbrli:stringItemType"
+                        abstract="false"
+                        periodType="duration"/>
+               <Concept name="fac:BalanceSheetDate" label="Balance Sheet Date" prefix="fac"
+                        dataType="xbrli:dateItemType"
+                        baseDataType="xbrli:dateItemType"
+                        abstract="false"
+                        periodType="duration"/>
+               <Concept name="fac:IncomeStatementStartPeriodYearToDate"
+                        label="Income Statement Start Period (Year to Date)"
+                        prefix="fac"
+                        dataType="xbrli:dateItemType"
+                        baseDataType="xbrli:dateItemType"
+                        abstract="false"
+                        periodType="duration"/>
+               <Concept name="fac:BalanceSheetFormat" label="Balance Sheet Format" prefix="fac"
+                        dataType="xbrli:normalizedStringItemType"
+                        baseDataType="xbrli:normalizedStringItemType"
+                        abstract="false"
+                        periodType="duration"/>
+               <Concept name="fac:IncomeStatementFormat" label="Income Statement Format" prefix="fac"
+                        dataType="xbrli:normalizedStringItemType"
+                        baseDataType="xbrli:normalizedStringItemType"
+                        abstract="false"
+                        periodType="duration"/>
+            </Concept>
+         </LineItems>
+      </Table>
+   </Network>
+   <Network identifier="http://www.xbrlsite.com/2018/Protototype/fac/ifrs/IncomeStatementSingleStep_Special6"
+            label="http://www.xbrlsite.com/2018/Protototype/fac/ifrs/IncomeStatementSingleStep_Special6">
+      <Table name="fac:IncomeStatementSingleStepTable"
+             label="Income Statement, Single Step [Table]"
+             prefix="fac">
+         <LineItems name="fac:IncomeStatementLineItems" label="Income Statement [Line Items]"
+                    prefix="fac">
+            <Concept name="fac:NetIncomeLossRollUp" label="Net Income (Loss) [Roll Up]" prefix="fac"
+                     dataType="xbrli:stringItemType"
+                     baseDataType="xbrli:stringItemType"
+                     abstract="true"
+                     periodType="duration">
+               <Concept name="fac:IncomeLossFromContinuingOperationsAfterTaxRollUp"
+                        label="Income (Loss) from Continuing Operations After Tax [Roll Up]"
+                        prefix="fac"
+                        dataType="xbrli:stringItemType"
+                        baseDataType="xbrli:stringItemType"
+                        abstract="true"
+                        periodType="duration">
+                  <Concept name="fac:IncomeLossFromContinuingOperationsBeforeTaxRollUp"
+                           label="Income (Loss) from Continuing Operations Before Tax [Roll Up]"
+                           prefix="fac"
+                           dataType="xbrli:stringItemType"
+                           baseDataType="xbrli:stringItemType"
+                           abstract="true"
+                           periodType="duration">
+                     <Concept name="fac:OperatingIncomeLossRollUp" label="Operating Income (Loss) [Roll Up]"
+                              prefix="fac"
+                              dataType="xbrli:stringItemType"
+                              baseDataType="xbrli:stringItemType"
+                              abstract="true"
+                              periodType="duration">
+                        <Concept name="fac:GrossProfitRollUp" label="Gross Profit [Roll Up]" prefix="fac"
+                                 dataType="xbrli:stringItemType"
+                                 baseDataType="xbrli:stringItemType"
+                                 abstract="true"
+                                 periodType="duration">
+                           <Concept name="fac:Revenues" label="Revenues" prefix="fac"
+                                    dataType="xbrli:monetaryItemType"
+                                    baseDataType="xbrli:monetaryItemType"
+                                    abstract="false"
+                                    balance="credit"
+                                    periodType="duration"/>
+                           <Concept name="fac:CostOfRevenue" label="Cost of Revenue" prefix="fac"
+                                    dataType="xbrli:monetaryItemType"
+                                    baseDataType="xbrli:monetaryItemType"
+                                    abstract="false"
+                                    balance="debit"
+                                    periodType="duration"/>
+                           <Concept name="fac:GrossProfit" label="Gross Profit" prefix="fac"
+                                    dataType="xbrli:monetaryItemType"
+                                    baseDataType="xbrli:monetaryItemType"
+                                    abstract="false"
+                                    balance="credit"
+                                    periodType="duration"/>
+                        </Concept>
+                        <Concept name="fac:OperatingExpenses" label="Operating Expenses" prefix="fac"
+                                 dataType="xbrli:monetaryItemType"
+                                 baseDataType="xbrli:monetaryItemType"
+                                 abstract="false"
+                                 balance="debit"
+                                 periodType="duration"/>
+                        <Concept name="fac:OperatingIncomeLoss" label="Operating Income (Loss)" prefix="fac"
+                                 dataType="xbrli:monetaryItemType"
+                                 baseDataType="xbrli:monetaryItemType"
+                                 abstract="false"
+                                 balance="credit"
+                                 periodType="duration"/>
+                     </Concept>
+                     <Concept name="fac:NonoperatingIncomeLoss" label="Nonoperating Income (Loss)"
+                              prefix="fac"
+                              dataType="xbrli:monetaryItemType"
+                              baseDataType="xbrli:monetaryItemType"
+                              abstract="false"
+                              balance="credit"
+                              periodType="duration"/>
+                     <Concept name="fac:IncomeLossFromContinuingOperationsBeforeTax"
+                              label="Income (Loss) from Continuing Operations Before Tax"
+                              prefix="fac"
+                              dataType="xbrli:monetaryItemType"
+                              baseDataType="xbrli:monetaryItemType"
+                              abstract="false"
+                              balance="credit"
+                              periodType="duration"/>
+                  </Concept>
+                  <Concept name="fac:IncomeTaxExpenseBenefit" label="Income Tax Expense (Benefit)"
+                           prefix="fac"
+                           dataType="xbrli:monetaryItemType"
+                           baseDataType="xbrli:monetaryItemType"
+                           abstract="false"
+                           balance="debit"
+                           periodType="duration"/>
+                  <Concept name="fac:IncomeLossFromContinuingOperationsAfterTax"
+                           label="Income (Loss) from Continuing Operations After Tax"
+                           prefix="fac"
+                           dataType="xbrli:monetaryItemType"
+                           baseDataType="xbrli:monetaryItemType"
+                           abstract="false"
+                           balance="credit"
+                           periodType="duration"/>
+               </Concept>
+               <Concept name="fac:IncomeLossFromDiscontinuedOperationsNetOfTax"
+                        label="Income (Loss) from Discontinued Operations, Net of Tax"
+                        prefix="fac"
+                        dataType="xbrli:monetaryItemType"
+                        baseDataType="xbrli:monetaryItemType"
+                        abstract="false"
+                        balance="credit"
+                        periodType="duration"/>
+               <Concept name="fac:NetIncomeLoss" label="Net Income (Loss)" prefix="fac"
+                        dataType="xbrli:monetaryItemType"
+                        baseDataType="xbrli:monetaryItemType"
+                        abstract="false"
+                        balance="credit"
+                        periodType="duration"/>
+            </Concept>
+         </LineItems>
+      </Table>
+   </Network>
+   <Network identifier="http://www.xbrlsite.com/2018/Protototype/fac/ifrs/KeyRatios"
+            label="http://www.xbrlsite.com/2018/Protototype/fac/ifrs/KeyRatios">
+      <Table name="fac:KeyRatiosTable" label="Key Ratios [Table]" prefix="fac">
+         <LineItems name="fac:KeyRatiosLineItems" label="Key Ratios [Line Items]" prefix="fac">
+            <Concept name="fac:KeyRatiosHierarchy" label="Key Ratios [Hierarchy]" prefix="fac"
+                     dataType="xbrli:stringItemType"
+                     baseDataType="xbrli:stringItemType"
+                     abstract="true"
+                     periodType="duration">
+               <Concept name="fac:ReturnOnEquity" label="Return on Equity (ROE)" prefix="fac"
+                        dataType="xbrli:decimalItemType"
+                        baseDataType="xbrli:decimalItemType"
+                        abstract="false"
+                        periodType="instant"/>
+               <Concept name="fac:ReturnOnAssets" label="Return on Assets (ROA)" prefix="fac"
+                        dataType="xbrli:decimalItemType"
+                        baseDataType="xbrli:decimalItemType"
+                        abstract="false"
+                        periodType="instant"/>
+               <Concept name="fac:ReturnOnSales" label="Return on Sales (ROS)" prefix="fac"
+                        dataType="xbrli:decimalItemType"
+                        baseDataType="xbrli:decimalItemType"
+                        abstract="false"
+                        periodType="instant"/>
+               <Concept name="fac:SustainableGrowthRate" label="Sustainable Growth Rate (SGR)"
+                        prefix="fac"
+                        dataType="xbrli:decimalItemType"
+                        baseDataType="xbrli:decimalItemType"
+                        abstract="false"
+                        periodType="instant"/>
+            </Concept>
+         </LineItems>
+      </Table>
+   </Network>
+   <Network identifier="http://www.xbrlsite.com/2018/Protototype/fac/ifrs/NetCashFlowBreakdown"
+            label="http://www.xbrlsite.com/2018/Protototype/fac/ifrs/NetCashFlowBreakdown">
+      <Table name="fac:NetCashFlowBreakdownTable" label="Net Cash Flow Breakdown [Table]"
+             prefix="fac">
+         <LineItems name="fac:NetCashFlowBreakdownLineItems"
+                    label="Net Cash Flow Breakdown [Line Items]"
+                    prefix="fac">
+            <Concept name="fac:NetCashFlowRollUp" label="Net Cash Flow [Roll Up]" prefix="fac"
+                     dataType="xbrli:stringItemType"
+                     baseDataType="xbrli:stringItemType"
+                     abstract="true"
+                     periodType="duration">
+               <Concept name="fac:NetCashFlowContinuing" label="Net Cash Flow, Continuing" prefix="fac"
+                        dataType="xbrli:monetaryItemType"
+                        baseDataType="xbrli:monetaryItemType"
+                        abstract="false"
+                        balance="debit"
+                        periodType="duration"/>
+               <Concept name="fac:NetCashFlowDiscontinued" label="Net Cash Flow, Discontinued"
+                        prefix="fac"
+                        dataType="xbrli:monetaryItemType"
+                        baseDataType="xbrli:monetaryItemType"
+                        abstract="false"
+                        balance="debit"
+                        periodType="duration"/>
+               <Concept name="fac:ExchangeGainsLosses" label="Exchange Gains (Losses)" prefix="fac"
+                        dataType="xbrli:monetaryItemType"
+                        baseDataType="xbrli:monetaryItemType"
+                        abstract="false"
+                        balance="debit"
+                        periodType="duration"/>
+               <Concept name="fac:NetCashFlow" label="Net Cash Flow" prefix="fac"
+                        dataType="xbrli:monetaryItemType"
+                        baseDataType="xbrli:monetaryItemType"
+                        abstract="false"
+                        balance="debit"
+                        periodType="duration"/>
+            </Concept>
+         </LineItems>
+      </Table>
+   </Network>
+   <Network identifier="http://www.xbrlsite.com/2018/Protototype/fac/ifrs/NetIncomeLossBreakdown"
+            label="http://www.xbrlsite.com/2018/Protototype/fac/ifrs/NetIncomeLossBreakdown">
+      <Table name="fac:NetIncomeLossBreakdownTable"
+             label="Net Income (Loss) Breakdown [Table]"
+             prefix="fac">
+         <LineItems name="fac:NetIncomeLossBreakdownLineItems"
+                    label="Net Income (Loss) Breakdown [Line Items]"
+                    prefix="fac">
+            <Concept name="fac:NetIncomeLossRollUp" label="Net Income (Loss) [Roll Up]" prefix="fac"
+                     dataType="xbrli:stringItemType"
+                     baseDataType="xbrli:stringItemType"
+                     abstract="true"
+                     periodType="duration">
+               <Concept name="fac:NetIncomeLossAttributableToParent"
+                        label="Net Income (Loss) Attributable to Parent"
+                        prefix="fac"
+                        dataType="xbrli:monetaryItemType"
+                        baseDataType="xbrli:monetaryItemType"
+                        abstract="false"
+                        balance="credit"
+                        periodType="duration"/>
+               <Concept name="fac:NetIncomeLossAttributableToNoncontrollingInterest"
+                        label="Net Income (Loss) Attributable to Noncontrolling Interest"
+                        prefix="fac"
+                        dataType="xbrli:monetaryItemType"
+                        baseDataType="xbrli:monetaryItemType"
+                        abstract="false"
+                        balance="credit"
+                        periodType="duration"/>
+               <Concept name="fac:NetIncomeLoss" label="Net Income (Loss)" prefix="fac"
+                        dataType="xbrli:monetaryItemType"
+                        baseDataType="xbrli:monetaryItemType"
+                        abstract="false"
+                        balance="credit"
+                        periodType="duration"/>
+            </Concept>
+            <Concept name="fac:ValidationResultsHierarchy" label="Validation Results [Hierarchy]"
+                     prefix="fac"
+                     dataType="xbrli:stringItemType"
+                     baseDataType="xbrli:stringItemType"
+                     abstract="true"
+                     periodType="duration">
+               <Concept name="fac:IS7" label="IS7" prefix="fac"/>
+            </Concept>
+         </LineItems>
+      </Table>
+   </Network>
+   <Network identifier="http://www.xbrlsite.com/2018/Protototype/fac/ifrs/StatementOfComprehensiveIncome"
+            label="http://www.xbrlsite.com/2018/Protototype/fac/ifrs/StatementOfComprehensiveIncome">
+      <Table name="fac:StatementComprehensiveIncomeLossTable"
+             label="Statement of Comprehensive Income (Loss) [Table]"
+             prefix="fac">
+         <LineItems name="fac:StatementComprehensiveIncomeLossLineItems"
+                    label="Statement of Comprehensive Income (Loss) [Line Items]"
+                    prefix="fac">
+            <Concept name="fac:ComprehensiveIncomeLossRollUp"
+                     label="Comprehensive Income (Loss) [Roll Up]"
+                     prefix="fac"
+                     dataType="xbrli:stringItemType"
+                     baseDataType="xbrli:stringItemType"
+                     abstract="true"
+                     periodType="duration">
+               <Concept name="fac:NetIncomeLoss" label="Net Income (Loss)" prefix="fac"
+                        dataType="xbrli:monetaryItemType"
+                        baseDataType="xbrli:monetaryItemType"
+                        abstract="false"
+                        balance="credit"
+                        periodType="duration"/>
+               <Concept name="fac:OtherComprehensiveIncomeLoss"
+                        label="Other Comprehensive Income (Loss)"
+                        prefix="fac"
+                        dataType="xbrli:monetaryItemType"
+                        baseDataType="xbrli:monetaryItemType"
+                        abstract="false"
+                        balance="credit"
+                        periodType="duration"/>
+               <Concept name="fac:ComprehensiveIncomeLoss" label="Comprehensive Income (Loss)"
+                        prefix="fac"
+                        dataType="xbrli:monetaryItemType"
+                        baseDataType="xbrli:monetaryItemType"
+                        abstract="false"
+                        balance="credit"
+                        periodType="duration"/>
+            </Concept>
+            <Concept name="fac:ValidationResultsHierarchy" label="Validation Results [Hierarchy]"
+                     prefix="fac"
+                     dataType="xbrli:stringItemType"
+                     baseDataType="xbrli:stringItemType"
+                     abstract="true"
+                     periodType="duration">
+               <Concept name="fac:IS10" label="IS10" prefix="fac"/>
+            </Concept>
+         </LineItems>
+      </Table>
+   </Network>
+   <Network identifier="http://www.xbrlsite.com/2018/Protototype/fac/ifrs/ValidationResults2"
+            label="http://www.xbrlsite.com/2018/Protototype/fac/ifrs/ValidationResults2">
+      <Table name="fac:ValidationResultsTable" label="Validation Results [Table]"
+             prefix="fac">
+         <LineItems name="fac:ValidationResultsLineItems" label="Validation Results [Line Items]"
+                    prefix="fac">
+            <Concept name="fac:ValidationResultsHierarchy" label="Validation Results [Hierarchy]"
+                     prefix="fac"
+                     dataType="xbrli:stringItemType"
+                     baseDataType="xbrli:stringItemType"
+                     abstract="true"
+                     periodType="duration">
+               <Concept name="fac:BalanceSheetAbstract" label="Balance Sheet [Abstract]" prefix="fac"
+                        dataType="xbrli:stringItemType"
+                        baseDataType="xbrli:stringItemType"
+                        abstract="true"
+                        periodType="duration">
+                  <Concept name="fac:BS1" label="BS1" prefix="fac"/>
+                  <Concept name="fac:BS2" label="BS2" prefix="fac"/>
+                  <Concept name="fac:BS3" label="BS3" prefix="fac"/>
+                  <Concept name="fac:BS4" label="BS4" prefix="fac"/>
+                  <Concept name="fac:BS5" label="BS5" prefix="fac"/>
+               </Concept>
+               <Concept name="fac:IncomeStatementAbstract" label="Income Statement [Abstract]"
+                        prefix="fac"
+                        dataType="xbrli:stringItemType"
+                        baseDataType="xbrli:stringItemType"
+                        abstract="true"
+                        periodType="duration">
+                  <Concept name="fac:IS1" label="IS1" prefix="fac"/>
+                  <Concept name="fac:IS2" label="IS2" prefix="fac"/>
+                  <Concept name="fac:IS3" label="IS3" prefix="fac"/>
+                  <Concept name="fac:IS4" label="IS4" prefix="fac"/>
+                  <Concept name="fac:IS5" label="IS5" prefix="fac"/>
+                  <Concept name="fac:IS6" label="IS6" prefix="fac"/>
+                  <Concept name="fac:IS7" label="IS7" prefix="fac"/>
+                  <Concept name="fac:IS8" label="IS8" prefix="fac"/>
+               </Concept>
+               <Concept name="fac:StatementComprehensiveIncomeAbstract"
+                        label="Statement of Comprehensive Income [Abstract]"
+                        prefix="fac"
+                        dataType="xbrli:stringItemType"
+                        baseDataType="xbrli:stringItemType"
+                        abstract="true"
+                        periodType="duration">
+                  <Concept name="fac:IS9" label="IS9" prefix="fac"/>
+                  <Concept name="fac:IS10" label="IS10" prefix="fac"/>
+               </Concept>
+               <Concept name="fac:CashFlowStatementAbstract" label="Cash Flow Statement [Abstract]"
+                        prefix="fac"
+                        dataType="xbrli:stringItemType"
+                        baseDataType="xbrli:stringItemType"
+                        abstract="true"
+                        periodType="duration">
+                  <Concept name="fac:CF1" label="CF1" prefix="fac"/>
+                  <Concept name="fac:CF2" label="CF2" prefix="fac"/>
+                  <Concept name="fac:CF3" label="CF3" prefix="fac"/>
+                  <Concept name="fac:CF4" label="CF4" prefix="fac"/>
+                  <Concept name="fac:CF5" label="CF5" prefix="fac"/>
+                  <Concept name="fac:CF6" label="CF6" prefix="fac"/>
+               </Concept>
+            </Concept>
+         </LineItems>
+      </Table>
+   </Network>
+</Component>
